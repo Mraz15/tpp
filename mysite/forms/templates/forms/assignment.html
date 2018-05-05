@@ -1,0 +1,122 @@
+{% extends "personal/header.html" %}
+
+{% load staticfiles %}
+
+
+{% block content %}
+
+<script href="{% static 'js/ass.js' %}"></script>
+
+<div class="container">
+         <div class="jumbotron">
+        <h1>Patent & Trademark Assignments</h1>
+        <p>Please fill out the form below to order a certified or non-certified copy of an assignemnt document!</p>
+        </div>
+</div>
+
+<div class="container">
+  <p class="lead">The assignment form below can be used to request assignment copies, either with or without USPTO certification and/or legalization for a specific country. Our pricing for assignment related orders is in the table below. If you need to order a certified assignment and have it legalizded for a specific country <a href="/legal">Click Here</a> and fill out the form for a quote!</td></p>
+</div>
+
+<div class="container">
+  <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title text-center">Assignment Pricing</h4>
+        </div>
+        <table class="table table-striped">
+          <tr>
+            <td> Non-Certified Assignment Copy</td>
+            <td> $60 + $1.00/page</td>
+            <td> 1 Business Day</td>
+          </tr>
+          <tr>
+            <td> Additional Non-Certified Assignment Copies</td>
+            <td> $5.00/assignment + $1.00/page</td>
+            <td> 1 Business day</td>
+          </tr>
+          <tr>
+            <td> Certified Assignment Copy</td>
+            <td> $65.00</td>
+            <td> 7 Business days</td>
+          </tr>
+          <tr>
+            <td> Additional Certified Assignment Copy</td>
+            <td> $55.00</td>
+            <td> 7 Business days</td>
+          </tr>
+        </table>
+</div>
+
+
+<div class="container col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title text-center">Order Form</h3>
+  </div>
+  <div class="panel-body">
+    <form class="form">
+  <div class="form-group">
+    <label for="first_name">First Name</label>
+    <input type="text" class="form-control" id="last_name" placeholder="Last Name">
+  </div>
+  <div class="form-group">
+    <label for="last_name">Last Name</label>
+    <input type="text" class="form-control" id="last_name" placeholder="Last Name">
+  </div>
+  <div class="form-group">
+    <label for="company">Company</label>
+    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="address">Address</label>
+    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="ref_num">Reference Number</label>
+    <input type="password" class="form-control" id="ref_num" placeholder="Reference Number">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Assignment(s)</label>
+    <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Reel/Frame: xxxxxx/xxxx"></textarea>
+    <small class="form-text text-muted">Orders with multiple assignments please hit <kbd>Enter</kbd> after each reel/frame number.</small>
+  </div>
+  <div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="Certified" checked>
+    Certified
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="Non-Certified">
+    Non-Certified
+  </label>
+</div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox">Legalized
+    </label>
+  </div>
+  <div class="form-group">
+    <label for="last_name">Country</label>
+    <input type="text" class="form-control" id="last_name" placeholder="Enter country if legalization is needed">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Special Instructions</label>
+    <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Any comments or additional instructions"></textarea>
+  </div>
+
+</form>
+  </div>
+</div>
+
+
+
+    
+
+{% endblock %}	

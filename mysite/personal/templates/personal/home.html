@@ -1,0 +1,43 @@
+{% extends "personal/header.html" %}
+
+{% block content %}
+ <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="container">
+      <div style="background-color: #245580 !important" class="jumbotron">
+        <h1 style="color: white">Welcome To The Patent Place!</h1>
+        <p style="color: white">The Patent Place has been providing premium document services to I.P. Law firms and multinational corporations for over 25 years!</p>
+        <p><a style="background-color: white; color: #245580 !important"class="btn btn-primary btn-lg" href="/about" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Authentications & Legalizations</h2>
+          <p>The Patent Place has been helping our associates Authenticate, Legalize, and Apostille documents for use in forgein countires since the 90s. Click the link below to get a cost and time estimate for your document now!</p>
+          <p><a class="btn btn-primary" href="/legal" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Patent File Search</h2>
+          <p>Coming Soon! Click the link below to order a file today!</p>
+          <p><a class="btn btn-primary" href="/PFS" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>USPTO Documents</h2>
+          <div class="list-group">
+            <p>Need a certified or non-certified copy of a patent or trademark related document? Click the link below to order your file today!</p>
+            <p><a class="btn btn-primary" href="/uspto_docs" role="button">View details &raquo;</a></p>
+          </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; 2018 The Patent Place, Inc.</p>
+      </footer>
+    </div> <!-- /container -->
+
+    
+
+{% endblock %}	

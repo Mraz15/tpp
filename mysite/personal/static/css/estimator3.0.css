@@ -1,0 +1,50 @@
+#tabletitle {
+    font-size: 2em;
+}
+
+#estimator {
+    border-style:double;
+}
+
+select {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    display:inline;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    
+
+}
+
+.bold {
+    font-weight:bold;
+    font-size: 1em
+}
+
+#cap {
+    text-transform: uppercase;
+}
+
+#results{
+    border-style:double;
+    text-align: center
+}
+
+table {
+    margin:auto;
+}
+
+.big {
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.test {
+    width: auto;
+    text-align: center;
+    border-style: groove;
+    margin: auto;
+    
+}

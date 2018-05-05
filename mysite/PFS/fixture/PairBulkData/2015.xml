@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8" ?><uspat:PatentBulkData xsi:schemaLocation="urn:us:gov:doc:uspto:patent https://s3-us-gov-west-1.amazonaws.com/pbd-prod3-reference/Schema/USPatent/Document/PatentBulkData_V1_0.xsd" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:uscom="urn:us:gov:doc:uspto:common" xmlns:uspat="urn:us:gov:doc:uspto:patent" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" com:st96Version="V2_0" com:ipoVersion="US_V6_0"><uspat:PatentData com:st96Version="V2_0" com:ipoVersion="US_V6_0" xsi:schemaLocation="urn:us:gov:doc:uspto:patent https://s3-us-gov-west-1.amazonaws.com/pbd-prod3-reference/Schema/USPatent/Document/PatentBulkData_V1_0.xsd" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:uscom="urn:us:gov:doc:uspto:common" xmlns:uspat="urn:us:gov:doc:uspto:patent" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <uspat:ApplicationData>
+        <uscom:ApplicationNumberText uscom:electronicText="14647444">14647444</uscom:ApplicationNumberText>
+        <pat:FilingDate>2015-05-26</pat:FilingDate>
+        <uscom:ApplicationTypeCategory>UTILITY</uscom:ApplicationTypeCategory>
+        <pat:PartyBag>
+            <com:CorrespondenceAddress>
+                <com:PartyIdentifier>23995</com:PartyIdentifier>
+            </com:CorrespondenceAddress>
+            <pat:InventorBag>
+                <pat:Inventor com:sequenceNumber="1">
+                    <com:PublicationContact>
+                        <com:Name>
+                            <com:PersonName>
+                                <com:PersonStructuredName>
+                                    <com:FirstName>Kwang Joon</com:FirstName>
+                                    <com:LastName>Yoon</com:LastName>
+                                </com:PersonStructuredName>
+                            </com:PersonName>
+                        </com:Name>
+                        <com:CityName>Seoul</com:CityName>
+                        <com:CountryCode>KR</com:CountryCode>
+                    </com:PublicationContact>
+                </pat:Inventor>
+            </pat:InventorBag>
+            <pat:ExaminerBag>
+                <pat:PrimaryExaminer>
+                    <com:Name>
+                        <com:PersonName>
+                            <com:PersonStructuredName>
+                                <com:FirstName>JUSTIN</com:FirstName>
+                                <com:MiddleName>M</com:MiddleName>
+                                <com:LastName>BENEDIK</com:LastName>
+                            </com:PersonStructuredName>
+                        </com:PersonName>
+                    </com:Name>
+                </pat:PrimaryExaminer>
+            </pat:ExaminerBag>
+        </pat:PartyBag>
+        <uscom:GroupArtUnitNumber uscom:electronicText="3647">3647</uscom:GroupArtUnitNumber>
+        <uspat:ApplicationConfirmationNumber>2913</uspat:ApplicationConfirmationNumber>
+        <com:ApplicantFileReference>CHANG-170NP</com:ApplicantFileReference>
+        <pat:PatentClassificationBag>
+            <pat:IPCRClassificationBag>
+                <pat:IPCRClassification>
+                    <pat:PatentClassificationText>244</pat:PatentClassificationText>
+                </pat:IPCRClassification>
+                <pat:IPCRClassification>
+                    <pat:PatentClassificationText>002</pat:PatentClassificationText>
+                </pat:IPCRClassification>
+            </pat:IPCRClassificationBag>
+        </pat:PatentClassificationBag>
+        <uscom:BusinessEntityStatusCategory>SMALL</uscom:BusinessEntityStatusCategory>
+        <uspat:FirstInventorToFileIndicator>false</uspat:FirstInventorToFileIndicator>
+        <pat:InventionTitle>MULTI-STAGE TILTING AND MULTI-ROTOR FLYING CAR</pat:InventionTitle>
+        <uscom:ApplicationStatusCategory>Patented Case</uscom:ApplicationStatusCategory>
+        <uscom:ApplicationStatusDate>2017-05-31</uscom:ApplicationStatusDate>
+        <uscom:OfficialFileLocationCategory>ELECTRONIC</uscom:OfficialFileLocationCategory>
+        <uspat:PatentPublicationIdentification>
+            <com:IPOfficeCode>US</com:IPOfficeCode>
+            <pat:PublicationNumber>US 2015-0298800 A1</pat:PublicationNumber>
+            <com:PublicationDate>2015-10-22</com:PublicationDate>
+        </uspat:PatentPublicationIdentification>
+        <uspat:PatentGrantIdentification>
+            <com:IPOfficeCode>US</com:IPOfficeCode>
+            <pat:PatentNumber>9682772</pat:PatentNumber>
+            <pat:GrantDate>2017-06-20</pat:GrantDate>
+        </uspat:PatentGrantIdentification>
+    </uspat:ApplicationData>
+    <uspat:PatentTermData>
+        <uspat:PatentTermAdjustmentData>
+            <pat:FilingDate>2015-05-26</pat:FilingDate>
+            <uspat:ADelayQuantity>0</uspat:ADelayQuantity>
+            <uspat:BDelayQuantity>0</uspat:BDelayQuantity>
+            <uspat:CDelayQuantity>0</uspat:CDelayQuantity>
+            <uspat:OverlappingDayQuantity>0</uspat:OverlappingDayQuantity>
+            <uspat:NonOverlappingDayQuantity>101</uspat:NonOverlappingDayQuantity>
+            <uspat:IPOfficeDayDelayQuantity>0</uspat:IPOfficeDayDelayQuantity>
+            <uspat:ApplicantDayDelayQuantity>22</uspat:ApplicantDayDelayQuantity>
+            <uspat:AdjustmentTotalQuantity>79</uspat:AdjustmentTotalQuantity>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>60.5</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2017-06-20</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>PTA 36 Months</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>60.4</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2015-05-26</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Commencement Date</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>60</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2017-06-20</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Patent Issue Date Used in PTA Calculation</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>59</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2017-05-22</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Dispatch to FDC</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>58</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2017-05-22</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Application Is Considered Ready for Issue</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>57</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2017-05-18</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Issue Fee Payment Verified</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>56</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2017-05-18</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Issue Fee Payment Received</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>54</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2017-03-28</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Mail PUBS Letter Withdrawing a Notice Requiring Inventors Oath or Declaration</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>53</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2017-03-24</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>PUBS Letter Withdrawing a Notice Requiring Inventors Oath or Declaration</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>51</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2017-03-16</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Electronic Review</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>50</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2017-03-16</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Email Notification</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>49</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2017-03-16</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Mail Notice of Allowance</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>43</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2017-03-13</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Notice of Allowance Data Verification Completed</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>42</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2015-07-20</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Oath or Declaration Filed (Including Supplemental)</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>41</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2017-03-06</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Reasons for Allowance</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>40</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2017-03-06</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Examiner's Amendment Communication</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>36</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2017-03-03</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Date Forwarded to Examiner</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>35</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2017-02-28</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Response after Non-Final Action</uspat:CaseActionDescriptionText>
+                <uspat:ApplicantDayDelayQuantity>22</uspat:ApplicantDayDelayQuantity>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>34</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2017-02-28</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Request for Extension of Time - Granted</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>33</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2016-11-04</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Electronic Review</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>32</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2016-11-04</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Email Notification</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>31</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2016-11-04</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Mail Non-Final Rejection</uspat:CaseActionDescriptionText>
+                <uspat:IPOfficeDayDelayQuantity>101</uspat:IPOfficeDayDelayQuantity>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>29</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2016-10-30</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Non-Final Rejection</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>28</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2016-10-30</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Information Disclosure Statement considered</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>27</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2016-08-10</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Case Docketed to Examiner in GAU</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>26</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2015-07-20</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Request for Foreign Priority (Priority Papers May Be Included)</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>25</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2015-05-26</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Request for Foreign Priority (Priority Papers May Be Included)</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>24</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2015-05-26</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Reference capture on IDS</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>23</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2015-05-26</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Information Disclosure Statement (IDS) Filed</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>22</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2015-10-23</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Email Notification</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>21</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2015-10-22</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Application ready for PDX access by participating foreign offices</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>20</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2015-10-22</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>PG-Pub Issue Notification</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>19</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2015-09-15</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Case Docketed to Examiner in GAU</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>18</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2015-08-06</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Application Is Now Complete</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>17</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2015-08-06</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Application Dispatched from OIPE</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>16</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2015-08-03</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Email Notification</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>15</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2015-08-03</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Change in Power of Attorney (May Include Associate POA)</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>14</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2015-07-13</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Email Notification</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>13</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2015-07-13</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Email Notification</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>12</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2015-05-26</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>371 Completion Date</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>11</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2015-07-10</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Sent to Classification Contractor</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>10</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2015-07-10</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>FITF set to NO - revise initial setting</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>9</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2015-05-26</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Patent Term Adjustment - Ready for Examination</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>8</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2015-07-13</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Filing Receipt</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>7</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2015-07-13</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Notice of DO/EO Acceptance Mailed</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>6</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2015-05-26</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Applicants have given acceptable permission for participating foreign </uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>5</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2015-06-11</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Applicant Has Filed a Verified Statement of Small Entity Status in Compliance with 37 CFR 1.27</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>4</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2015-05-26</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Information Disclosure Statement (IDS) Filed</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>3</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2015-05-26</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Cleared by OIPE CSR</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>2</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2015-05-26</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>ENTITY STATUS SET TO UNDISCOUNTED (INITIAL DEFAULT SETTING OR STATUS CHANGE)</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>1</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2015-05-26</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>Initial Exam Team nn</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+            <uspat:PatentTermAdjustmentHistoryData>
+                <uspat:CaseActionSequenceNumber>0.5</uspat:CaseActionSequenceNumber>
+                <uspat:RecordedDate>2013-02-25</uspat:RecordedDate>
+                <uspat:CaseActionDescriptionText>International Filing date</uspat:CaseActionDescriptionText>
+            </uspat:PatentTermAdjustmentHistoryData>
+        </uspat:PatentTermAdjustmentData>
+    </uspat:PatentTermData>
+    <uspat:PublishedDocumentData>
+        <uspat:ApplicationPublication>
+            <uspat:PatentPublicationIdentification>
+                <pat:PublicationNumber>US20150298800A1</pat:PublicationNumber>
+                <com:PublicationDate>2015-10-22</com:PublicationDate>
+            </uspat:PatentPublicationIdentification>
+            <com:WebURI>http://appft1.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&amp;Sect2=HITOFF&amp;d=PG01&amp;p=1&amp;u=/netahtml/PTO/srchnum.html&amp;r=1&amp;f=G&amp;l=50&amp;s1=20150298800.PGNR.&amp;OS=DN/20150298800&amp;RS=DN/20150298800</com:WebURI>
+        </uspat:ApplicationPublication>
+        <uspat:GrantPublication>
+            <uspat:PatentGrantIdentification>
+                <pat:PatentNumber>9682772</pat:PatentNumber>
+            </uspat:PatentGrantIdentification>
+            <com:WebURI>http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=9682772</com:WebURI>
+        </uspat:GrantPublication>
+    </uspat:PublishedDocumentData>
+</uspat:PatentData><uspat:PatentData com:st96Version="V2_0" com:ipoVersion="US_V6_0" xsi:schemaLocation="urn:us:gov:doc:uspto:patent https://s3-us-gov-west-1.amazonaws.com/pbd-prod3-reference/Schema/USPatent/Document/PatentBulkData_V1_0.xsd" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:uscom="urn:us:gov:doc:uspto:common" xmlns:uspat="urn:us:gov:doc:uspto:patent" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <uspat:ApplicationData>
+        <uscom:ApplicationNumberText uscom:electronicText="14748735">14748735</uscom:ApplicationNumberText>
+        <pat:FilingDate>2015-06-24</pat:FilingDate>
+        <uscom:ApplicationTypeCategory>UTILITY</uscom:ApplicationTypeCategory>
+        <pat:PartyBag>
+            <com:CorrespondenceAddress>
+                <com:PartyIdentifier>34044</com:PartyIdentifier>
+            </com:CorrespondenceAddress>
+            <pat:InventorBag>
+                <pat:Inventor com:sequenceNumber="1">
+                    <com:PublicationContact>
+                        <com:Name>
+                            <com:PersonName>
+                                <com:PersonStructuredName>
+                                    <com:FirstName>Jesus</com:FirstName>
+                                    <com:MiddleName>M.</com:MiddleName>
+                                    <com:LastName>Mateo Artieda</com:LastName>
+                                </com:PersonStructuredName>
+                            </com:PersonName>
+                        </com:Name>
+                        <com:CityName>Kornwestheim</com:CityName>
+                        <com:CountryCode>DE</com:CountryCode>
+                    </com:PublicationContact>
+                </pat:Inventor>
+                <pat:Inventor com:sequenceNumber="2">
+                    <com:PublicationContact>
+                        <com:Name>
+                            <com:PersonName>
+                                <com:PersonStructuredName>
+                                    <com:FirstName>Vaughan</com:FirstName>
+                                    <com:LastName>Scott</com:LastName>
+                                </com:PersonStructuredName>
+                            </com:PersonName>
+                        </com:Name>
+                        <com:CityName>Royal Oak</com:CityName>
+                        <com:GeographicRegionName com:geographicRegionCategory="State">MI</com:GeographicRegionName>
+                        <com:CountryCode>US</com:CountryCode>
+                    </com:PublicationContact>
+                </pat:Inventor>
+                <pat:Inventor com:sequenceNumber="3">
+                    <com:PublicationContact>
+                        <com:Name>
+                            <com:PersonName>
+                                <com:PersonStructuredName>
+                                    <com:FirstName>Celeste</com:FirstName>
+                                    <com:MiddleName>M.</com:MiddleName>
+                                    <com:LastName>Cauley</com:LastName>
+                                </com:PersonStructuredName>
+                            </com:PersonName>
+                        </com:Name>
+                        <com:CityName>Ann Arbor</com:CityName>
+                        <com:GeographicRegionName com:geographicRegionCategory="State">MI</com:GeographicRegionName>
+                        <com:CountryCode>US</com:CountryCode>
+                    </com:PublicationContact>
+                </pat:Inventor>
+                <pat:Inventor com:sequenceNumber="4">
+                    <com:PublicationContact>
+                        <com:Name>
+                            <com:PersonName>
+                                <com:PersonStructuredName>
+                                    <com:FirstName>Mandeep</com:FirstName>
+                                    <com:MiddleName>Singh</com:MiddleName>
+                                    <com:LastName>Sangha</com:LastName>
+                                </com:PersonStructuredName>
+                            </com:PersonName>
+                        </com:Name>
+                        <com:CityName>Westland</com:CityName>
+                        <com:GeographicRegionName com:geographicRegionCategory="State">MI</com:GeographicRegionName>
+                        <com:CountryCode>US</com:CountryCode>
+                    </com:PublicationContact>
+                </pat:Inventor>
+            </pat:InventorBag>
+            <pat:ExaminerBag>
+                <pat:PrimaryExaminer>
+                    <com:Name>
+                        <com:PersonName>
+                            <com:PersonStructuredName>
+                                <com:FirstName>ADAM</com:FirstName>
+                                <com:MiddleName>MOHAMED</com:MiddleName>
+                                <com:LastName>ALHARBI</com:LastName>
+                            </com:PersonStructuredName>
+                        </com:PersonName>
+                    </com:Name>
+                </pat:PrimaryExaminer>
+            </pat:ExaminerBag>
+        </pat:PartyBag>
+        <uscom:GroupArtUnitNumber uscom:electronicText="3663">3663</uscom:GroupArtUnitNumber>
+        <uspat:ApplicationConfirmationNumber>6453</uspat:ApplicationConfirmationNumber>
+        <com:ApplicantFileReference>081276-9787-US00</com:ApplicantFileReference>
+        <pat:PatentClassificationBag>
+            <pat:IPCRClassificationBag>
+                <pat:IPCRClassification>
+                    <pat:PatentClassificationText>701</pat:PatentClassificationText>
+                </pat:IPCRClassification>
+                <pat:IPCRClassification>
+                    <pat:PatentClassificationText>036</pat:PatentClassificationText>
+                </pat:IPCRClassification>
+            </pat:IPCRClassificationBag>
+        </pat:PatentClassificationBag>
+        <uscom:BusinessEntityStatusCategory>UNDISCOUNTED</uscom:BusinessEntityStatusCategory>
+        <uspat:FirstInventorToFileIndicator>true</uspat:FirstInventorToFileIndicator>
+        <pat:InventionTitle>FLYING CAR EXTENDED VEHICLE CONTROL METHOD</pat:InventionTitle>
+        <uscom:ApplicationStatusCategory>Notice of Allowance Mailed -- Application Received in Office of Publications</uscom:ApplicationStatusCategory>
+        <uscom:ApplicationStatusDate>2017-10-10</uscom:ApplicationStatusDate>
+        <uscom:OfficialFileLocationCategory>ELECTRONIC</uscom:OfficialFileLocationCategory>
+        <uspat:PatentPublicationIdentification>
+            <com:IPOfficeCode>US</com:IPOfficeCode>
+            <pat:PublicationNumber>US 2016-0375896 A1</pat:PublicationNumber>
+            <com:PublicationDate>2016-12-29</com:PublicationDate>
+        </uspat:PatentPublicationIdentification>
+        <uspat:PatentGrantIdentification>
+            <com:IPOfficeCode>US</com:IPOfficeCode>
+            <pat:PatentNumber>0</pat:PatentNumber>
+        </uspat:PatentGrantIdentification>
+    </uspat:ApplicationData>
+    <uspat:PublishedDocumentData>
+        <uspat:ApplicationPublication>
+            <uspat:PatentPublicationIdentification>
+                <pat:PublicationNumber>US20160375896A1</pat:PublicationNumber>
+                <com:PublicationDate>2016-12-29</com:PublicationDate>
+            </uspat:PatentPublicationIdentification>
+            <com:WebURI>http://appft1.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&amp;Sect2=HITOFF&amp;d=PG01&amp;p=1&amp;u=/netahtml/PTO/srchnum.html&amp;r=1&amp;f=G&amp;l=50&amp;s1=20160375896.PGNR.&amp;OS=DN/20160375896&amp;RS=DN/20160375896</com:WebURI>
+        </uspat:ApplicationPublication>
+        <uspat:GrantPublication>
+            <uspat:PatentGrantIdentification>
+                <pat:PatentNumber>0</pat:PatentNumber>
+            </uspat:PatentGrantIdentification>
+            <com:WebURI> </com:WebURI>
+        </uspat:GrantPublication>
+    </uspat:PublishedDocumentData>
+</uspat:PatentData>
+</uspat:PatentBulkData>

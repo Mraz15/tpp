@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?><uspat:PatentBulkData xsi:schemaLocation="urn:us:gov:doc:uspto:patent https://s3-us-gov-west-1.amazonaws.com/pbd-prod3-reference/Schema/USPatent/Document/PatentBulkData_V1_0.xsd" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:uscom="urn:us:gov:doc:uspto:common" xmlns:uspat="urn:us:gov:doc:uspto:patent" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" com:st96Version="V2_0" com:ipoVersion="US_V6_0"><uspat:PatentData com:st96Version="V2_0" com:ipoVersion="US_V6_0" xsi:schemaLocation="urn:us:gov:doc:uspto:patent https://s3-us-gov-west-1.amazonaws.com/pbd-prod3-reference/Schema/USPatent/Document/PatentBulkData_V1_0.xsd" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:uscom="urn:us:gov:doc:uspto:common" xmlns:uspat="urn:us:gov:doc:uspto:patent" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <uspat:ApplicationData>
+        <uscom:ApplicationNumberText uscom:electronicText="60264699">60264699</uscom:ApplicationNumberText>
+        <pat:FilingDate>2001-01-30</pat:FilingDate>
+        <uscom:ApplicationTypeCategory>Provisional</uscom:ApplicationTypeCategory>
+        <pat:PartyBag>
+            <com:CorrespondenceAddress>
+                <com:PartyIdentifier>24129</com:PartyIdentifier>
+            </com:CorrespondenceAddress>
+            <pat:InventorBag>
+                <pat:Inventor com:sequenceNumber="1">
+                    <com:PublicationContact>
+                        <com:Name>
+                            <com:PersonName>
+                                <com:PersonStructuredName>
+                                    <com:FirstName>Nicholas</com:FirstName>
+                                    <com:MiddleName>L.</com:MiddleName>
+                                    <com:LastName>Geranio</com:LastName>
+                                </com:PersonStructuredName>
+                            </com:PersonName>
+                        </com:Name>
+                        <com:CityName>Woodland Hills</com:CityName>
+                        <com:GeographicRegionName com:geographicRegionCategory="State">CA</com:GeographicRegionName>
+                    </com:PublicationContact>
+                </pat:Inventor>
+            </pat:InventorBag>
+            <pat:ExaminerBag>
+                <pat:PrimaryExaminer>
+                    <com:Name>
+                        <com:PersonName>
+                            <com:PersonStructuredName>
+                                <com:LastName>-</com:LastName>
+                            </com:PersonStructuredName>
+                        </com:PersonName>
+                    </com:Name>
+                </pat:PrimaryExaminer>
+            </pat:ExaminerBag>
+        </pat:PartyBag>
+        <uspat:ApplicationConfirmationNumber>9566</uspat:ApplicationConfirmationNumber>
+        <com:ApplicantFileReference>82898</com:ApplicantFileReference>
+        <uscom:BusinessEntityStatusCategory>UNDISCOUNTED</uscom:BusinessEntityStatusCategory>
+        <pat:InventionTitle>Counter rotating ducted fan flying car</pat:InventionTitle>
+        <uscom:ApplicationStatusCategory>Provisional Application Expired</uscom:ApplicationStatusCategory>
+        <uscom:ApplicationStatusDate>2003-08-31</uscom:ApplicationStatusDate>
+        <uscom:OfficialFileLocationCategory>FILE REPOSITORY (FRANCONIA)</uscom:OfficialFileLocationCategory>
+        <uscom:OfficialFileLocationDate>2001-07-03</uscom:OfficialFileLocationDate>
+        <uspat:PatentPublicationIdentification>
+            <pat:PublicationNumber>0</pat:PublicationNumber>
+        </uspat:PatentPublicationIdentification>
+        <uspat:PatentGrantIdentification>
+            <pat:PatentNumber>0</pat:PatentNumber>
+        </uspat:PatentGrantIdentification>
+    </uspat:ApplicationData>
+</uspat:PatentData>
+</uspat:PatentBulkData>

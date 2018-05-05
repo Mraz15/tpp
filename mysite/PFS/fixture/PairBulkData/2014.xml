@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?><uspat:PatentBulkData xsi:schemaLocation="urn:us:gov:doc:uspto:patent https://s3-us-gov-west-1.amazonaws.com/pbd-prod3-reference/Schema/USPatent/Document/PatentBulkData_V1_0.xsd" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:uscom="urn:us:gov:doc:uspto:common" xmlns:uspat="urn:us:gov:doc:uspto:patent" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" com:st96Version="V2_0" com:ipoVersion="US_V6_0"><uspat:PatentData com:st96Version="V2_0" com:ipoVersion="US_V6_0" xsi:schemaLocation="urn:us:gov:doc:uspto:patent https://s3-us-gov-west-1.amazonaws.com/pbd-prod3-reference/Schema/USPatent/Document/PatentBulkData_V1_0.xsd" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:uscom="urn:us:gov:doc:uspto:common" xmlns:uspat="urn:us:gov:doc:uspto:patent" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <uspat:ApplicationData>
+        <uscom:ApplicationNumberText uscom:electronicText="14585988">14585988</uscom:ApplicationNumberText>
+        <pat:FilingDate>2014-12-30</pat:FilingDate>
+        <uscom:ApplicationTypeCategory>UTILITY</uscom:ApplicationTypeCategory>
+        <pat:PartyBag>
+            <com:CorrespondenceAddress>
+                <com:PartyIdentifier>26936</com:PartyIdentifier>
+            </com:CorrespondenceAddress>
+            <pat:InventorBag>
+                <pat:Inventor com:sequenceNumber="1">
+                    <com:PublicationContact>
+                        <com:Name>
+                            <com:PersonName>
+                                <com:PersonStructuredName>
+                                    <com:FirstName>Bogdan</com:FirstName>
+                                    <com:LastName>Radu</com:LastName>
+                                </com:PersonStructuredName>
+                            </com:PersonName>
+                        </com:Name>
+                        <com:CityName>Shelton</com:CityName>
+                        <com:GeographicRegionName com:geographicRegionCategory="State">CT</com:GeographicRegionName>
+                        <com:CountryCode>US</com:CountryCode>
+                    </com:PublicationContact>
+                </pat:Inventor>
+            </pat:InventorBag>
+            <pat:ExaminerBag>
+                <pat:PrimaryExaminer>
+                    <com:Name>
+                        <com:PersonName>
+                            <com:PersonStructuredName>
+                                <com:FirstName>GEORGE</com:FirstName>
+                                <com:MiddleName>A</com:MiddleName>
+                                <com:LastName>ANDONYAN</com:LastName>
+                            </com:PersonStructuredName>
+                        </com:PersonName>
+                    </com:Name>
+                </pat:PrimaryExaminer>
+            </pat:ExaminerBag>
+        </pat:PartyBag>
+        <uscom:GroupArtUnitNumber uscom:electronicText="3647">3647</uscom:GroupArtUnitNumber>
+        <uspat:ApplicationConfirmationNumber>7880</uspat:ApplicationConfirmationNumber>
+        <com:ApplicantFileReference>RADBOG P02AUS</com:ApplicantFileReference>
+        <pat:PatentClassificationBag>
+            <pat:IPCRClassificationBag>
+                <pat:IPCRClassification>
+                    <pat:PatentClassificationText>244</pat:PatentClassificationText>
+                </pat:IPCRClassification>
+                <pat:IPCRClassification>
+                    <pat:PatentClassificationText>002</pat:PatentClassificationText>
+                </pat:IPCRClassification>
+            </pat:IPCRClassificationBag>
+        </pat:PatentClassificationBag>
+        <uscom:BusinessEntityStatusCategory>SMALL</uscom:BusinessEntityStatusCategory>
+        <uspat:FirstInventorToFileIndicator>true</uspat:FirstInventorToFileIndicator>
+        <pat:InventionTitle>Flying Car or Drone</pat:InventionTitle>
+        <uscom:ApplicationStatusCategory>Notice of Appeal Filed</uscom:ApplicationStatusCategory>
+        <uscom:ApplicationStatusDate>2017-10-30</uscom:ApplicationStatusDate>
+        <uscom:OfficialFileLocationCategory>ELECTRONIC</uscom:OfficialFileLocationCategory>
+        <uspat:PatentPublicationIdentification>
+            <com:IPOfficeCode>US</com:IPOfficeCode>
+            <pat:PublicationNumber>US 2016-0272314 A1</pat:PublicationNumber>
+            <com:PublicationDate>2016-09-22</com:PublicationDate>
+        </uspat:PatentPublicationIdentification>
+        <uspat:PatentGrantIdentification>
+            <com:IPOfficeCode>US</com:IPOfficeCode>
+            <pat:PatentNumber>0</pat:PatentNumber>
+        </uspat:PatentGrantIdentification>
+    </uspat:ApplicationData>
+    <uspat:PublishedDocumentData>
+        <uspat:ApplicationPublication>
+            <uspat:PatentPublicationIdentification>
+                <pat:PublicationNumber>US20160272314A1</pat:PublicationNumber>
+                <com:PublicationDate>2016-09-22</com:PublicationDate>
+            </uspat:PatentPublicationIdentification>
+            <com:WebURI>http://appft1.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&amp;Sect2=HITOFF&amp;d=PG01&amp;p=1&amp;u=/netahtml/PTO/srchnum.html&amp;r=1&amp;f=G&amp;l=50&amp;s1=20160272314.PGNR.&amp;OS=DN/20160272314&amp;RS=DN/20160272314</com:WebURI>
+        </uspat:ApplicationPublication>
+        <uspat:GrantPublication>
+            <uspat:PatentGrantIdentification>
+                <pat:PatentNumber>0</pat:PatentNumber>
+            </uspat:PatentGrantIdentification>
+            <com:WebURI> </com:WebURI>
+        </uspat:GrantPublication>
+    </uspat:PublishedDocumentData>
+</uspat:PatentData>
+</uspat:PatentBulkData>

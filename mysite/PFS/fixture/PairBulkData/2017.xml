@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" ?><uspat:PatentBulkData xsi:schemaLocation="urn:us:gov:doc:uspto:patent https://s3-us-gov-west-1.amazonaws.com/pbd-prod3-reference/Schema/USPatent/Document/PatentBulkData_V1_0.xsd" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:uscom="urn:us:gov:doc:uspto:common" xmlns:uspat="urn:us:gov:doc:uspto:patent" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" com:st96Version="V2_0" com:ipoVersion="US_V6_0"><uspat:PatentData com:st96Version="V2_0" com:ipoVersion="US_V6_0" xsi:schemaLocation="urn:us:gov:doc:uspto:patent https://s3-us-gov-west-1.amazonaws.com/pbd-prod3-reference/Schema/USPatent/Document/PatentBulkData_V1_0.xsd" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:uscom="urn:us:gov:doc:uspto:common" xmlns:uspat="urn:us:gov:doc:uspto:patent" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <uspat:ApplicationData>
+        <uscom:ApplicationNumberText uscom:electronicText="35503550">35503550</uscom:ApplicationNumberText>
+        <pat:FilingDate>2017-04-25</pat:FilingDate>
+        <uscom:ApplicationTypeCategory>DESIGN</uscom:ApplicationTypeCategory>
+        <pat:PartyBag>
+            <com:CorrespondenceAddress>
+                <com:PartyIdentifier>null</com:PartyIdentifier>
+            </com:CorrespondenceAddress>
+            <pat:InventorBag>
+                <pat:Inventor com:sequenceNumber="1">
+                    <com:PublicationContact>
+                        <com:Name>
+                            <com:PersonName>
+                                <com:PersonStructuredName>
+                                    <com:FirstName>Kenneth Douglas</com:FirstName>
+                                    <com:MiddleName>Alexander</com:MiddleName>
+                                    <com:LastName>MacAndrew</com:LastName>
+                                </com:PersonStructuredName>
+                            </com:PersonName>
+                        </com:Name>
+                        <com:CityName>Bratislava-Zahorska Bystrica</com:CityName>
+                        <com:CountryCode>SK</com:CountryCode>
+                    </com:PublicationContact>
+                </pat:Inventor>
+                <pat:Inventor com:sequenceNumber="2">
+                    <com:PublicationContact>
+                        <com:Name>
+                            <com:PersonName>
+                                <com:PersonStructuredName>
+                                    <com:FirstName>William</com:FirstName>
+                                    <com:MiddleName>Simon</com:MiddleName>
+                                    <com:LastName>Rooms</com:LastName>
+                                </com:PersonStructuredName>
+                            </com:PersonName>
+                        </com:Name>
+                        <com:CityName>Bratislava</com:CityName>
+                        <com:CountryCode>SK</com:CountryCode>
+                    </com:PublicationContact>
+                </pat:Inventor>
+                <pat:Inventor com:sequenceNumber="3">
+                    <com:PublicationContact>
+                        <com:Name>
+                            <com:PersonName>
+                                <com:PersonStructuredName>
+                                    <com:FirstName>Tomás</com:FirstName>
+                                    <com:LastName>Urík</com:LastName>
+                                </com:PersonStructuredName>
+                            </com:PersonName>
+                        </com:Name>
+                        <com:CityName>Sastin-Straze</com:CityName>
+                        <com:CountryCode>SK</com:CountryCode>
+                    </com:PublicationContact>
+                </pat:Inventor>
+                <pat:Inventor com:sequenceNumber="4">
+                    <com:PublicationContact>
+                        <com:Name>
+                            <com:PersonName>
+                                <com:PersonStructuredName>
+                                    <com:FirstName>Adam</com:FirstName>
+                                    <com:LastName>Danko</com:LastName>
+                                </com:PersonStructuredName>
+                            </com:PersonName>
+                        </com:Name>
+                        <com:CityName>Stupava</com:CityName>
+                        <com:CountryCode>SK</com:CountryCode>
+                    </com:PublicationContact>
+                </pat:Inventor>
+                <pat:Inventor com:sequenceNumber="5">
+                    <com:PublicationContact>
+                        <com:Name>
+                            <com:PersonName>
+                                <com:PersonStructuredName>
+                                    <com:FirstName>Alan</com:FirstName>
+                                    <com:LastName>Roach</com:LastName>
+                                </com:PersonStructuredName>
+                            </com:PersonName>
+                        </com:Name>
+                        <com:CityName>Oslo</com:CityName>
+                        <com:CountryCode>NO</com:CountryCode>
+                    </com:PublicationContact>
+                </pat:Inventor>
+            </pat:InventorBag>
+            <pat:ExaminerBag>
+                <pat:PrimaryExaminer>
+                    <com:Name>
+                        <com:PersonName>
+                            <com:PersonStructuredName>
+                                <com:LastName>-</com:LastName>
+                            </com:PersonStructuredName>
+                        </com:PersonName>
+                    </com:Name>
+                </pat:PrimaryExaminer>
+            </pat:ExaminerBag>
+        </pat:PartyBag>
+        <uscom:GroupArtUnitNumber uscom:electronicText="2913">2913</uscom:GroupArtUnitNumber>
+        <uspat:ApplicationConfirmationNumber>5224</uspat:ApplicationConfirmationNumber>
+        <pat:PatentClassificationBag>
+            <pat:IPCRClassificationBag>
+                <pat:IPCRClassification>
+                    <pat:PatentClassificationText>D99</pat:PatentClassificationText>
+                </pat:IPCRClassification>
+            </pat:IPCRClassificationBag>
+        </pat:PatentClassificationBag>
+        <uscom:BusinessEntityStatusCategory>UNDISCOUNTED</uscom:BusinessEntityStatusCategory>
+        <uspat:FirstInventorToFileIndicator>true</uspat:FirstInventorToFileIndicator>
+        <pat:InventionTitle>Tail sections of flying car</pat:InventionTitle>
+        <uscom:ApplicationStatusCategory>Application Dispatched from Preexam, Not Yet Docketed</uscom:ApplicationStatusCategory>
+        <uscom:ApplicationStatusDate>2017-09-22</uscom:ApplicationStatusDate>
+        <uscom:OfficialFileLocationCategory>ELECTRONIC</uscom:OfficialFileLocationCategory>
+        <uspat:PatentPublicationIdentification>
+            <pat:PublicationNumber>0</pat:PublicationNumber>
+        </uspat:PatentPublicationIdentification>
+        <uspat:PatentGrantIdentification>
+            <pat:PatentNumber>0</pat:PatentNumber>
+        </uspat:PatentGrantIdentification>
+        <com:HagueAgreementData>
+            <com:InternationalRegistrationPublicationDate>2017-08-25</com:InternationalRegistrationPublicationDate>
+            <com:InternationalRegistrationNumber>DM/097344</com:InternationalRegistrationNumber>
+        </com:HagueAgreementData>
+    </uspat:ApplicationData>
+</uspat:PatentData><uspat:PatentData com:st96Version="V2_0" com:ipoVersion="US_V6_0" xsi:schemaLocation="urn:us:gov:doc:uspto:patent https://s3-us-gov-west-1.amazonaws.com/pbd-prod3-reference/Schema/USPatent/Document/PatentBulkData_V1_0.xsd" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:uscom="urn:us:gov:doc:uspto:common" xmlns:uspat="urn:us:gov:doc:uspto:patent" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <uspat:ApplicationData>
+        <uscom:ApplicationNumberText uscom:electronicText="35503586">35503586</uscom:ApplicationNumberText>
+        <pat:FilingDate>2017-04-25</pat:FilingDate>
+        <uscom:ApplicationTypeCategory>DESIGN</uscom:ApplicationTypeCategory>
+        <pat:PartyBag>
+            <com:CorrespondenceAddress>
+                <com:PartyIdentifier>null</com:PartyIdentifier>
+            </com:CorrespondenceAddress>
+            <pat:InventorBag>
+                <pat:Inventor com:sequenceNumber="1">
+                    <com:PublicationContact>
+                        <com:Name>
+                            <com:PersonName>
+                                <com:PersonStructuredName>
+                                    <com:FirstName>Kenneth</com:FirstName>
+                                    <com:MiddleName>Douglas Alexander</com:MiddleName>
+                                    <com:LastName>MacAndrew</com:LastName>
+                                </com:PersonStructuredName>
+                            </com:PersonName>
+                        </com:Name>
+                        <com:CityName>Bratislava-Zahorska Bystrica</com:CityName>
+                        <com:CountryCode>SK</com:CountryCode>
+                    </com:PublicationContact>
+                </pat:Inventor>
+                <pat:Inventor com:sequenceNumber="2">
+                    <com:PublicationContact>
+                        <com:Name>
+                            <com:PersonName>
+                                <com:PersonStructuredName>
+                                    <com:FirstName>William</com:FirstName>
+                                    <com:MiddleName>Simon</com:MiddleName>
+                                    <com:LastName>Rooms</com:LastName>
+                                </com:PersonStructuredName>
+                            </com:PersonName>
+                        </com:Name>
+                        <com:CityName>Bratislava</com:CityName>
+                        <com:CountryCode>SK</com:CountryCode>
+                    </com:PublicationContact>
+                </pat:Inventor>
+                <pat:Inventor com:sequenceNumber="3">
+                    <com:PublicationContact>
+                        <com:Name>
+                            <com:PersonName>
+                                <com:PersonStructuredName>
+                                    <com:FirstName>Tomás</com:FirstName>
+                                    <com:LastName>Urik</com:LastName>
+                                </com:PersonStructuredName>
+                            </com:PersonName>
+                        </com:Name>
+                        <com:CityName>Sastin-Straze</com:CityName>
+                        <com:CountryCode>SK</com:CountryCode>
+                    </com:PublicationContact>
+                </pat:Inventor>
+                <pat:Inventor com:sequenceNumber="4">
+                    <com:PublicationContact>
+                        <com:Name>
+                            <com:PersonName>
+                                <com:PersonStructuredName>
+                                    <com:FirstName>Adam</com:FirstName>
+                                    <com:LastName>Danko</com:LastName>
+                                </com:PersonStructuredName>
+                            </com:PersonName>
+                        </com:Name>
+                        <com:CityName>Stupava</com:CityName>
+                        <com:CountryCode>SK</com:CountryCode>
+                    </com:PublicationContact>
+                </pat:Inventor>
+                <pat:Inventor com:sequenceNumber="5">
+                    <com:PublicationContact>
+                        <com:Name>
+                            <com:PersonName>
+                                <com:PersonStructuredName>
+                                    <com:FirstName>Alan</com:FirstName>
+                                    <com:LastName>Roach</com:LastName>
+                                </com:PersonStructuredName>
+                            </com:PersonName>
+                        </com:Name>
+                        <com:CityName>Oslo</com:CityName>
+                        <com:CountryCode>NO</com:CountryCode>
+                    </com:PublicationContact>
+                </pat:Inventor>
+            </pat:InventorBag>
+            <pat:ExaminerBag>
+                <pat:PrimaryExaminer>
+                    <com:Name>
+                        <com:PersonName>
+                            <com:PersonStructuredName>
+                                <com:LastName>-</com:LastName>
+                            </com:PersonStructuredName>
+                        </com:PersonName>
+                    </com:Name>
+                </pat:PrimaryExaminer>
+            </pat:ExaminerBag>
+        </pat:PartyBag>
+        <uscom:GroupArtUnitNumber uscom:electronicText="2913">2913</uscom:GroupArtUnitNumber>
+        <uspat:ApplicationConfirmationNumber>4046</uspat:ApplicationConfirmationNumber>
+        <pat:PatentClassificationBag>
+            <pat:IPCRClassificationBag>
+                <pat:IPCRClassification>
+                    <pat:PatentClassificationText>D12</pat:PatentClassificationText>
+                </pat:IPCRClassification>
+            </pat:IPCRClassificationBag>
+        </pat:PatentClassificationBag>
+        <uscom:BusinessEntityStatusCategory>UNDISCOUNTED</uscom:BusinessEntityStatusCategory>
+        <uspat:FirstInventorToFileIndicator>true</uspat:FirstInventorToFileIndicator>
+        <pat:InventionTitle>Body sections of flying car</pat:InventionTitle>
+        <uscom:ApplicationStatusCategory>Application Dispatched from Preexam, Not Yet Docketed</uscom:ApplicationStatusCategory>
+        <uscom:ApplicationStatusDate>2017-09-20</uscom:ApplicationStatusDate>
+        <uscom:OfficialFileLocationCategory>ELECTRONIC</uscom:OfficialFileLocationCategory>
+        <uspat:PatentPublicationIdentification>
+            <pat:PublicationNumber>0</pat:PublicationNumber>
+        </uspat:PatentPublicationIdentification>
+        <uspat:PatentGrantIdentification>
+            <pat:PatentNumber>0</pat:PatentNumber>
+        </uspat:PatentGrantIdentification>
+        <com:HagueAgreementData>
+            <com:InternationalRegistrationPublicationDate>2017-08-25</com:InternationalRegistrationPublicationDate>
+            <com:InternationalRegistrationNumber>DM/097331</com:InternationalRegistrationNumber>
+        </com:HagueAgreementData>
+    </uspat:ApplicationData>
+</uspat:PatentData>
+</uspat:PatentBulkData>

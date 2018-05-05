@@ -1,0 +1,105 @@
+{% extends "personal/header.html" %}
+
+{% block content %}
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load staticfiles %}
+
+
+    <script src="{% static 'js/PFS.js' %}"></script>
+    <title>The Patent Place, Inc.</title>
+</head>
+<div class="container">
+         <div style="background-color: #245580 !important"  class="jumbotron">
+        <h1 style=" color: white !important">Patent File Search</h1>
+        <p style=" color: white !important">Coming Soon, be able to search our database and download non-certified copies of; file histories, applications, assignments, NPLs, and other related patent documents!</p>
+        </div>
+</div>
+
+<div class="container">
+  <p class="lead">Our Web devolpment team at The Patent Place, Inc. is currently working on building a search engine that will allow our clients to search our private database for; file histories, applications, assignments, NPLs, etc... We anticipate this new feature to be up and running by Spring of 2018! Until then please email <a href="info@thepatentplace.com">info@thepatentplace.com</a> with any file request and we will be happy to process your order!</p>
+</div>
+
+<div class="container">
+  <h3>File Types</h3>
+  <ul>
+    <li><strong>File History (wrapper)</strong>
+      <ul><li>A complete record of the application, including all of the documents relating to the patent such as diagrams and drawings; communications between the USPTO & the applicant; statements made by the applicant; and records of official actions by the USPTO.</li></ul>
+    </li>
+    <li><strong>Application</strong></li>
+    <ul><li>A copy of the original application as filed. Please note orders for copy of applications will not have any papers that were filed after the intial applicaiton.</li></ul>
+    <li><strong>Assignments</strong></li>
+    <ul><li>Document showing the owner of the intellectual property.</li></ul>
+    <li><strong>Non-Patent Literature (NPL)</strong></li>
+    <ul><li>Documents and publications that are not patents or published patent applications, but are cited as references for being relevant in a patent prosecution. Examples: A magazine article or a doctoral thesis.</li></ul>
+  </ul>
+</div>
+<br>
+<div class="container col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+  <div class="panel panel-default">
+        <div style="background-color: #245580 !important" class="panel-heading">
+            <h4 style=" color: white !important" class="panel-title text-center">File Pricing & Time</h4>
+        </div>
+        <table class="table table-striped">
+          <tr>
+            <td>File History</td>
+            <td>$1.00/page</td>
+            <td>1 Day</td>
+          </tr>
+          <tr>
+            <td>Applicaiton as Filed</td>
+            <td>$1.00/page</td>
+            <td>1 Day</td>
+          </tr>
+          <tr>
+            <td>NPLs (selected papers)</td>
+            <td>$35.00 + $1.00/page</td>
+            <td>1 Day</td>
+          </tr>
+          <tr>
+            <td>Assignment</td>
+            <td>$60.00 + $1.00/page</td>
+            <td>1 Day</td>
+          </tr>
+        </table>
+    </div>
+    <p><strong>Important: </strong>The USPTO is currently moving all of their file wrappers to a new location and this is causing some delays with orders. Time is in business days starting on the day the order is placed.</p>
+  </div>
+<div class="container">
+</div>
+
+<div class="container">
+  <h3>Ordering</h3>
+  <p> Please email <a href="info@thepatentplace.com">info@thepatentplace.com</a> with any file request and we will be happy to process your order!</p> 
+</div>
+
+<!---<div class="col-lg-6">
+    <div class="input-group">
+      <input id="search" type="text" class="form-control" placeholder="Search for...">
+      <span class="input-group-btn">
+        <button class="btn btn-primary" type="button" onclick="
+
+       <?php
+
+        $results = exec('(users/zacmraz/desktop/tpp/mysite/personal/static/php/python testpy.py');
+        echo $results;
+
+
+        ?>
+
+         ">Go!</button>
+      </span>
+    </div>
+  </div>
+</div>
+
+<div>
+	<p id="display"><?php 
+    echo $results;
+
+    ?></p>
+</div>-->
+    
+
+{% endblock %}	

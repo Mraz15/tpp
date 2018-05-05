@@ -1,0 +1,450 @@
+{% extends "personal/header.html" %}
+
+{% block content %}
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load staticfiles %}
+
+    <link href="{% static 'css/navbar.css' %}" rel="stylesheet">
+    <!---<link type="text/css" rel="stylesheet" href="{% static 'css/estimator3.0.css' %}">-->
+
+    <script src="{% static 'js/estimator7.0.js' %}"></script>
+    <title>The Patent Place, Inc.</title>
+</head>
+
+<body>
+    <div class="container">
+         <div style="background-color: #245580 !important" class="jumbotron">
+        <h1 style=" color: white !important" >Apostilles, Authentications, and Legalizations</h1>
+        <p style=" color: white !important" >At The Patent Place we have been helping our associates apostille, authenticate, & legalize documents for 25+ years. We are well trained to handle documents for contries that are and are not apart of the Hague Convention. Please follow the instructions below to obtain a cost and time estimate and to place your order with us!</p>
+        </div>
+    </div>
+    
+<div class="container">
+    <h3>Cost & Time Estimates:</h3>
+    
+    <ul>
+        <li>
+            <strong><u>Number of documents:</u></strong> Select the number of documents you need legalized. Discounts are added to orders with multiple documents that originated in the same location and are being legaized for the same country.
+        </li>
+        <li>
+            <strong><u>Document Type</u></strong>
+            <ol>
+                <li>
+                    <span class="bold">Notarized/True copy:</span> Notarized copy of document (i.e., power of attorney, deed of assignment, etc.…),
+                </li>
+                <li>
+                    <span class="bold">Certified state document:</span> A Certified Document obtained from the State within the last 60 days (i.e., article’s of incorporation, certificate of existence, etc.…)
+                </li>
+                <li>
+                    <span class="bold">Certified USPTO document:</span> A document certified by the US Patent and Trademark Office (i.e., patent, patent assignment, patent application, etc.…)
+                </li>
+            </ol>         
+        </li> 
+        <li>
+            <strong><u>Provider of Document:</u></strong> Are you (the client) providing the document or would you like to order through The Patent Place, Inc? (clients must provide notarized documents)
+        </li>
+        <li>
+            <strong><u>State:</u></strong> where the document originated or was notarized (not applicable for certified USPTO documents).
+        </li>
+        <li>
+            <strong><u>Country:</u></strong> Where the document is needed.
+        </li>
+        <li>
+            <strong><u>Copies:</u></strong> Color copies of your completed documents can be e-mailed upon request.
+        </li>
+    </ul>
+</div>
+</span>
+    <!-- tester 
+   <input type="button" value="test" onclick="test()">
+            <table class="test">
+            <thead>
+                <tr>
+                <th colspan = 10>Variable Values</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="test">Country Steps</td>
+                    <td class="test">Country Courier Fees</td>
+                    <td class="test">Country Embassy Fees</td>
+                    <td class="test">Sec of State Fees</td>
+                    <td class="test">State Courier Fees</td>
+                    <td class="test">State Shipping Fees</td>
+                    <td class="test">170</td>
+                    <td class="test">State Department Fees</td>
+                    <td class="test">Certification Fees</td>
+                    <td class="test">Copy Fees</td>
+                </tr>
+                <tr>
+                    <td class="test" id="countrySteps"></td>
+                    <td class="test" id="countryCourierFees"></td>
+                    <td class="test" id="countryEmbassyFees"></td>
+                    <td class="test" id="secOfStateFees"></td>
+                    <td class="test" id="stateCourierFees"></td>
+                    <td class="test" id="stateShippingFees"></td>
+                    <td class="test" id="totalStepFees"></td>
+                    <td class="test" id="stateDepartmentFees"></td>
+                    <td class="test" id="certificationFees"></td>
+                    <td class="test" id="copyFees"></td>
+                </tr>
+            </tbody>
+            </table>
+            <br>
+            <br>
+            <br>-->
+
+
+<br>
+    <!-- start of table -->
+<div class="container col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+    <div class="panel panel-default">
+        <div style="background-color: #245580 !important" class="panel-heading">
+            <h4 style=" color: white !important" class="panel-title text-center">Estimate Form</h4>
+        </div>
+    <div class="panel-body">     
+        <form class="form">
+            <div class="form-group">
+                <select class="form-control" id="numOfDocs" name="numOfDocs" onchange="Estimator(); timeEstimate()">
+            <option value="select">Select Number of Documents</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6+</option>   
+                </select>
+            </div>
+
+            <div class="form-group">
+                <select class="form-control" id="docType" name="docType" onchange="ProviderDropDown(); StateDropDown(); Estimator(); timeEstimate(); ">
+                    <option value="select">Select Document Type</option>
+                    <option value="trueCopy">Notarized/True Copy</option>
+                    <option value="cert">Certified state document</option>
+                    <option value="certPTO">Certified USPTO document</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <select class="form-control" id="countries" name="countries" onchange="Estimator(); timeEstimate()">
+                                    <option value="select">Select Country</option> 
+                                    <option value="AFG">Afghanistan</option>
+                                    <option value="ALB">Albania</option>
+                                    <option value="DZA">Algeria</option>
+                                    <option value="AND">Andorra</option>
+                                    <option value="AGO">Angola</option>
+                                    <option value="ATG">Antigua and Barbuda</option>
+                                    <option value="ARG">Argentina</option>
+                                    <option value="ARM">Armenia</option>
+                                    <option value="AUS">Australia</option>
+                                    <option value="AUT">Austria</option>
+                                    <option value="AZE">Azerbaijan</option>
+                                    <option value="BHS">Bahamas</option>
+                                    <option value="BHR">Bahrain</option>
+                                    <option value="BGD">Bangladesh</option>
+                                    <option value="BRB">Barbados</option>
+                                    <option value="BLR">Belarus</option>
+                                    <option value="BEL">Belgium</option>
+                                    <option value="BLZ">Belize</option>
+                                    <option value="BEN">Benin</option>
+                                    <option value="BTN">Bhutan</option>
+                                    <option value="BOL">Bolivia</option>
+                                    <option value="BWA">Botswana</option>
+                                    <option value="BRA">Brazil</option>
+                                    <option value="BRN">Brunei Darussalam</option>
+                                    <option value="BGR">Bulgaria</option>
+                                    <option value="BFA">Burkina Faso</option>
+                                    <option value="BDI">Burundi</option>
+                                    <option value="KHM">Cambodia</option>
+                                    <option value="CMR">Cameroon</option>
+                                    <option value="CAN">Canada</option>
+                                    <option value="CAF">Central African Republic</option>
+                                    <option value="TCD">Chad</option>
+                                    <option value="CHL">Chile</option>
+                                    <option value="CHN">China</option>
+                                    <option value="COL">Colombia</option>
+                                    <option value="COM">Comoros</option>
+                                    <option value="COG">Congo</option>
+                                    <option value="COK">Cook Islands</option>
+                                    <option value="CRI">Costa Rica</option>
+                                    <option value="CIV">Côte d'Ivoire</option>
+                                    <option value="HRV">Croatia</option>
+                                    <option value="CUB">Cuba</option>
+                                    <option value="CYP">Cyprus</option>
+                                    <option value="CZE">Czech Republic</option>
+                                    <option value="DNK">Denmark</option>
+                                    <option value="DJI">Djibouti</option>
+                                    <option value="DMA">Dominica</option>
+                                    <option value="DOM">Dominican Republic</option>
+                                    <option value="ECU">Ecuador</option>
+                                    <option value="EGY">Egypt</option>
+                                    <option value="SLV">El Salvador</option>
+                                    <option value="GNQ">Equatorial Guinea</option>
+                                    <option value="ERI">Eritrea</option>
+                                    <option value="EST">Estonia</option>
+                                    <option value="ETH">Ethiopia</option>
+                                    <option value="FJI">Fiji</option>
+                                    <option value="FIN">Finland</option>
+                                    <option value="FRA">France</option>
+                                    <option value="GAB">Gabon</option>
+                                    <option value="GMB">Gambia</option>
+                                    <option value="GCC">GCC</option>
+                                    <option value="GEO">Georgia</option>
+                                    <option value="DEU">Germany</option>
+                                    <option value="GHA">Ghana</option>
+                                    <option value="GRC">Greece</option>
+                                    <option value="GRD">Grenada</option>
+                                    <option value="GUM">Guam</option>
+                                    <option value="GTM">Guatemala</option>
+                                    <option value="GIN">Guinea</option>
+                                    <option value="GNB">Guinea-Bissau</option>
+                                    <option value="GUY">Guyana</option>
+                                    <option value="HTI">Haiti</option>
+                                    <option value="HND">Honduras</option>
+                                    <option value="HKG">Hong Kong</option>
+                                    <option value="HUN">Hungary</option>
+                                    <option value="ISL">Iceland</option>
+                                    <option value="IND">India</option>
+                                    <option value="IDN">Indonesia</option>
+                                    <option value="IRN">Iran</option>
+                                    <option value="IRQ">Iraq</option>
+                                    <option value="IRL">Ireland</option>
+                                    <option value="ISR">Israel</option>
+                                    <option value="ITA">Italy</option>
+                                    <option value="JAM">Jamaica</option>
+                                    <option value="JPN">Japan</option>
+                                    <option value="JOR">Jordan</option>
+                                    <option value="KAZ">Kazakhstan</option>
+                                    <option value="KEN">Kenya</option>
+                                    <option value="KIR">Kiribati</option>
+                                    <option value="KWT">Kuwait</option>
+                                    <option value="KGZ">Kyrgyzstan</option>
+                                    <option value="LAO">Laos</option>
+                                    <option value="LVA">Latvia</option>
+                                    <option value="LBN">Lebanon</option>
+                                    <option value="LSO">Lesotho</option>
+                                    <option value="LBR">Liberia</option>
+                                    <option value="LBY">Libya</option>
+                                    <option value="LIE">Liechtenstein</option>
+                                    <option value="LTU">Lithuania</option>
+                                    <option value="LUX">Luxembourg</option>
+                                    <option value="MAC">Macao</option>
+                                    <option value="MKD">Macedonia</option>
+                                    <option value="MDG">Madagascar</option>
+                                    <option value="MWI">Malawi</option>
+                                    <option value="MYS">Malaysia</option>
+                                    <option value="MDV">Maldives</option>
+                                    <option value="MLI">Mali</option>
+                                    <option value="MLT">Malta</option>
+                                    <option value="MHL">Marshall Islands</option>
+                                    <option value="MRT">Mauritania</option>
+                                    <option value="MUS">Mauritius</option>
+                                    <option value="MEX">Mexico</option>
+                                    <option value="FSM">Micronesia</option>
+                                    <option value="MDA">Moldova</option>
+                                    <option value="MCO">Monaco</option>
+                                    <option value="MNG">Mongolia</option>
+                                    <option value="MNE">Montenegro</option>
+                                    <option value="MAR">Morocco</option>
+                                    <option value="MOZ">Mozambique</option>
+                                    <option value="MMR">Myanmar</option>
+                                    <option value="NAM">Namibia</option>
+                                    <option value="NRU">Nauru</option>
+                                    <option value="NPL">Nepal</option>
+                                    <option value="NLD">Netherlands</option>
+                                    <option value="NZL">New Zealand</option>
+                                    <option value="NIC">Nicaragua</option>
+                                    <option value="NER">Niger</option>
+                                    <option value="NGA">Nigeria</option>
+                                    <option value="NIU">Niue</option>
+                                    <option value="NOR">Norway</option>
+                                    <option value="OMN">Oman</option>
+                                    <option value="PAK">Pakistan</option>
+                                    <option value="PSE">Palestine</option>
+                                    <option value="PAN">Panama</option>
+                                    <option value="PNG">Papua New Guinea</option>
+                                    <option value="PRY">Paraguay</option>
+                                    <option value="PER">Peru</option>
+                                    <option value="PHL">Philippines</option>
+                                    <option value="POL">Poland</option>
+                                    <option value="PRT">Portugal</option>
+                                    <option value="QAT">Qatar</option>
+                                    <option value="ROU">Romania</option>
+                                    <option value="RUS">Russia</option>
+                                    <option value="RWA">Rwanda</option>
+                                    <option value="KNA">Saint Kitts and Nevis</option>
+                                    <option value="LCA">Saint Lucia</option>
+                                    <option value="VCT">Saint Vincent and the Grenadines</option>
+                                    <option value="WSM">Samoa</option>
+                                    <option value="SMR">San Marino</option>
+                                    <option value="STP">Sao Tome and Principe</option>
+                                    <option value="SAU">Saudi Arabia</option>
+                                    <option value="SEN">Senegal</option>
+                                    <option value="SRB">Serbia</option>
+                                    <option value="SYC">Seychelles</option>
+                                    <option value="SLE">Sierra Leone</option>
+                                    <option value="SGP">Singapore</option>
+                                    <option value="SVK">Slovakia</option>
+                                    <option value="SVN">Slovenia</option>
+                                    <option value="SLB">Solomon Islands</option>
+                                    <option value="SOM">Somalia</option>
+                                    <option value="ZAF">South Africa</option>
+                                    <option value="KOR">South Korea</option>
+                                    <option value="SSD">South Sudan</option>
+                                    <option value="ESP">Spain</option>
+                                    <option value="LKA">Sri Lanka</option>
+                                    <option value="SDN">Sudan</option>
+                                    <option value="SUR">Suriname</option>
+                                    <option value="SWZ">Swaziland</option>
+                                    <option value="SWE">Sweden</option>
+                                    <option value="CHE">Switzerland</option>
+                                    <option value="SYR">Syria</option>
+                                    <option value="TJK">Tajikistan</option>
+                                    <option value="TZA">Tanzania</option>
+                                    <option value="THA">Thailand</option>
+                                    <option value="TLS">Timor-Leste</option>
+                                    <option value="TGO">Togo</option>
+                                    <option value="TON">Tonga</option>
+                                    <option value="TTO">Trinidad and Tobago</option>
+                                    <option value="TUN">Tunisia</option>
+                                    <option value="TUR">Turkey</option>
+                                    <option value="TKM">Turkmenistan</option>
+                                    <option value="TUV">Tuvalu</option>
+                                    <option value="UGA">Uganda</option>
+                                    <option value="UKR">Ukraine</option>
+                                    <option value="ARE">United Arab Emirates</option>
+                                    <option value="GBR">United Kingdom</option>
+                                    <option value="URY">Uruguay</option>
+                                    <option value="UZB">Uzbekistan</option>
+                                    <option value="VUT">Vanuatu</option>
+                                    <option value="VEN">Venezuela</option>
+                                    <option value="VNM">Vietnam</option>
+                                    <option value="YEM">Yemen</option>
+                                    <option value="ZMB">Zambia</option>
+                                    <option value="ZWE">Zimbabwe</option>
+                  
+                </select>
+            </div>
+
+            <div class="form-group">
+                 <select class="form-control" id="states" name="states" onchange="Estimator(); timeEstimate()">    
+                                    <option value="select">Select State</option> 
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="DC">District Of Columbia</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <select class="form-control" id='provider' name="provider" onchange="Estimator(); timeEstimate()">
+                                   <option selected value="select">Select provider</option>
+                                    <option value="you">You will provide</option>
+                                    <option value="TPP">Order from The Patent Place</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <select class="form-control" id="copies" name="copies" onchange="Estimator(); timeEstimate()">
+                                    <option value="select">Select Copies</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>  
+                </select>
+            </div>
+            <div class="form-group">
+                <h3 class="text-center">Cost Estimate: <span id="estimate">Complete form</span></h3>    
+            </div>
+            <div class="form-group">
+                <h3 class="text-center">Time Estimate: <span id="estimate2">Complete form</span></h3>
+            </div>
+            <hr>
+            <div>
+                <p><strong>Important: </strong>Estimates do <strong>NOT</strong> include return shipping, and are based on current embassy, consulate, and state department costs as well as local courier cost, and are subject to change without notice.</p>
+            </div>
+        </form>
+    </div>
+    </div>
+</div>
+<div class="container">
+</div>
+
+<div class="container">
+    <h3>Ordering</h3>
+    
+    <ol>
+        <li>
+            Email <a href="info@thepatentplace.com">info@thepatentplace.com</a> with your request, including your deadline and if possible a scanned copy of your document(s). We review documents for obvious errors and if any found, contact you to help aid in correction before sending originals to be processed.
+        </li>
+        <li>
+            Ship documents to our Office at <strong>The Patent Place, Inc., 301 Franklin St., 3rd Floor Alexandira, Va 22314</strong> via overnight express delivery. We begin processing documents upon receipt.
+        </li>
+    </ol>
+</div>
+
+<div class="container">
+    <h3>Shipping Options (not included in estimate)</h3>
+    
+    <ul>
+        <li>
+            Domestic overnight shipping (cost determined by destination)
+        </li>
+        <li>
+            International priority shipping (cost determined by destination)
+        </li>
+    </ul>
+</div>
+</body>
+
+
+    
+
+{% endblock %}	

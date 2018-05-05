@@ -1,0 +1,680 @@
+{% extends "personal/header.html" %}
+
+ 
+{% block content %}
+{% load staticfiles %}
+<head>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="{% static 'js/cert2.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/certfees.js' %}"></script>
+</head>
+
+<div class="container">
+         <div style="background-color: #245580 !important" class="jumbotron">
+        <h1 style="color: white !important">USPTO Documents</h1>
+        <p style="color: white !important">Please fill out the form below to order your document today!</p>
+        </div>
+</div>
+
+<div class="container">
+  <p class="lead">The assignment form below can be used to request assignment copies, either with or without USPTO certification and/or legalization for a specific country. Our pricing for assignment related orders is in the table below. If you need to order a certified assignment and have it legalizded for a specific country <a href="/legal">Click Here</a> and fill out the form for a quote!</td></p>
+
+
+
+<div class="container col-lg-7 col-md-7">
+  <div class="panel panel-default">
+    <div style="background-color: #245580 !important" class="panel-heading">
+      <h3 style=" color: white !important" class="panel-title text-center">Order Form</h3>
+    </div>
+    <div class="panel-body">
+      <form class="form">
+        <div class="form-group">
+          <label for="first_name">First Name</label>
+        <input type="text" class="form-control" id="first_name" placeholder="Last Name">
+        </div>
+        <div class="form-group">
+          <label for="last_name">Last Name</label>
+          <input type="text" class="form-control" id="last_name" placeholder="Last Name">
+        </div>
+        <div class="form-group">
+          <label for="company">Company</label>
+          <input type="text" class="form-control" id="company_name" placeholder="Company Name">
+        </div>
+        <div class="form-group">
+          <label for="address">Address</label>
+          <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Address"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="ref_num">Reference Number</label>
+          <input type="password" class="form-control" id="ref_num" placeholder="Reference Number">
+        </div>
+      </form>
+
+
+
+      <div class="panel panel-default" id="documentRequest" style="display: block">
+        <div style="background-color: #245580 !important" class="panel-heading">
+          <h3 style=" color: white !important" class="panel-title text-center">Document Request</h3>
+        </div>
+        <div class="panel-body">
+          <form class="form">
+            <div class="form-group">
+              <select class="form-control" id="numOfDocs" name="numOfDocs" onchange="" style="display: block">
+                  <option value="select">Number of Individual Documents</option>
+                  <option value=1>1</option>
+                  <option value=2>2</option>
+                  <option value=3>3</option>
+                  <option value=4>4</option>
+                  <option value=5>5</option>
+                  <option value=6>6</option>
+                  <option value=7>7</option>
+                  <option value=8>8</option>
+                  <option value=9>9</option>
+                  <option value=10>10</option>
+              </select>
+            </div>
+          </form>
+
+
+      <div id="1" style="display: none">
+        <h2 class="text-center"> 1 Document </h2>
+      </div>
+      <div id="2" style="display: none">
+        <h2 class="text-center"> 2 Documents </h2>
+      </div>
+      <div id="3" style="display: none">
+        <h2 class="text-center"> 3 Documents </h2>
+      </div>
+      <div id="4" style="display: none">
+        <h2 class="text-center"> 4 Documents </h2>
+      </div>
+      <div id="5" style="display: none">
+        <h2 class="text-center"> 5 Documents </h2>
+      </div>
+      <div id="6" style="display: none">
+        <h2 class="text-center"> 6 Documents </h2>
+      </div>
+      <div id="7" style="display: none">
+        <h2 class="text-center"> 7 Documents </h2>
+      </div>
+      <div id="8" style="display: none">
+        <h2 class="text-center"> 8 Documents </h2>
+      </div>
+      <div id="9" style="display: none">
+        <h2 class="text-center"> 9 Documents </h2>
+      </div>
+      <div id="10" style="display: none">
+        <h2 class="text-center"> 10 Documents </h2>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<div class="panel panel-default" id="documentLine" style="display: none">
+            <div style="background-color: #245580 !important" class="panel-heading">
+              <h3 style=" color: white !important" class="panel-title text-center" id="docHeader"></h3>
+            </div>
+            <br>
+            <div class="panel-body">
+              <div id="orderForm" clss="form">
+                <form class="form-group">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="fileNum" placeholder="Document Number">
+                  </div>
+                  <div class="form-group">
+                    <select id="docType" class="form-control">
+                      <option value="select">Document Type</option>
+                      <option value="app">Applicaiton as Filed</option>
+                      <option value="FH">File History</option>
+                      <option value="pat">Patent</option>
+                      <option value="ass">Assignment</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <select id="cert" class="form-control">
+                      <option value="select">Certification</option>
+                      <option value="Yes">Certified</option>
+                      <option value="No">Non-Certified</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <select id="legal" class="form-control">
+                      <option value="select">Legalization</option>
+                      <option value="Yes">Legalization - Yes</option>
+                      <option value="No">Legalization - No</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <select class="form-control" id="countries" name="countries" onchange="" style="display: none">
+                                              <option value="select">Select Country</option> 
+                                              <option value="AFG">Afghanistan</option>
+                                              <option value="ALB">Albania</option>
+                                              <option value="DZA">Algeria</option>
+                                              <option value="AND">Andorra</option>
+                                              <option value="AGO">Angola</option>
+                                              <option value="ATG">Antigua and Barbuda</option>
+                                              <option value="ARG">Argentina</option>
+                                              <option value="ARM">Armenia</option>
+                                              <option value="AUS">Australia</option>
+                                              <option value="AUT">Austria</option>
+                                              <option value="AZE">Azerbaijan</option>
+                                              <option value="BHS">Bahamas</option>
+                                              <option value="BHR">Bahrain</option>
+                                              <option value="BGD">Bangladesh</option>
+                                              <option value="BRB">Barbados</option>
+                                              <option value="BLR">Belarus</option>
+                                              <option value="BEL">Belgium</option>
+                                              <option value="BLZ">Belize</option>
+                                              <option value="BEN">Benin</option>
+                                              <option value="BTN">Bhutan</option>
+                                              <option value="BOL">Bolivia</option>
+                                              <option value="BWA">Botswana</option>
+                                              <option value="BRA">Brazil</option>
+                                              <option value="BRN">Brunei Darussalam</option>
+                                              <option value="BGR">Bulgaria</option>
+                                              <option value="BFA">Burkina Faso</option>
+                                              <option value="BDI">Burundi</option>
+                                              <option value="KHM">Cambodia</option>
+                                              <option value="CMR">Cameroon</option>
+                                              <option value="CAN">Canada</option>
+                                              <option value="CAF">Central African Republic</option>
+                                              <option value="TCD">Chad</option>
+                                              <option value="CHL">Chile</option>
+                                              <option value="CHN">China</option>
+                                              <option value="COL">Colombia</option>
+                                              <option value="COM">Comoros</option>
+                                              <option value="COG">Congo</option>
+                                              <option value="COK">Cook Islands</option>
+                                              <option value="CRI">Costa Rica</option>
+                                              <option value="CIV">Côte d'Ivoire</option>
+                                              <option value="HRV">Croatia</option>
+                                              <option value="CUB">Cuba</option>
+                                              <option value="CYP">Cyprus</option>
+                                              <option value="CZE">Czech Republic</option>
+                                              <option value="DNK">Denmark</option>
+                                              <option value="DJI">Djibouti</option>
+                                              <option value="DMA">Dominica</option>
+                                              <option value="DOM">Dominican Republic</option>
+                                              <option value="ECU">Ecuador</option>
+                                              <option value="EGY">Egypt</option>
+                                              <option value="SLV">El Salvador</option>
+                                              <option value="GNQ">Equatorial Guinea</option>
+                                              <option value="ERI">Eritrea</option>
+                                              <option value="EST">Estonia</option>
+                                              <option value="ETH">Ethiopia</option>
+                                              <option value="FJI">Fiji</option>
+                                              <option value="FIN">Finland</option>
+                                              <option value="FRA">France</option>
+                                              <option value="GAB">Gabon</option>
+                                              <option value="GMB">Gambia</option>
+                                              <option value="GCC">GCC</option>
+                                              <option value="GEO">Georgia</option>
+                                              <option value="DEU">Germany</option>
+                                              <option value="GHA">Ghana</option>
+                                              <option value="GRC">Greece</option>
+                                              <option value="GRD">Grenada</option>
+                                              <option value="GUM">Guam</option>
+                                              <option value="GTM">Guatemala</option>
+                                              <option value="GIN">Guinea</option>
+                                              <option value="GNB">Guinea-Bissau</option>
+                                              <option value="GUY">Guyana</option>
+                                              <option value="HTI">Haiti</option>
+                                              <option value="HND">Honduras</option>
+                                              <option value="HKG">Hong Kong</option>
+                                              <option value="HUN">Hungary</option>
+                                              <option value="ISL">Iceland</option>
+                                              <option value="IND">India</option>
+                                              <option value="IDN">Indonesia</option>
+                                              <option value="IRN">Iran</option>
+                                              <option value="IRQ">Iraq</option>
+                                              <option value="IRL">Ireland</option>
+                                              <option value="ISR">Israel</option>
+                                              <option value="ITA">Italy</option>
+                                              <option value="JAM">Jamaica</option>
+                                              <option value="JPN">Japan</option>
+                                              <option value="JOR">Jordan</option>
+                                              <option value="KAZ">Kazakhstan</option>
+                                              <option value="KEN">Kenya</option>
+                                              <option value="KIR">Kiribati</option>
+                                              <option value="KWT">Kuwait</option>
+                                              <option value="KGZ">Kyrgyzstan</option>
+                                              <option value="LAO">Laos</option>
+                                              <option value="LVA">Latvia</option>
+                                              <option value="LBN">Lebanon</option>
+                                              <option value="LSO">Lesotho</option>
+                                              <option value="LBR">Liberia</option>
+                                              <option value="LBY">Libya</option>
+                                              <option value="LIE">Liechtenstein</option>
+                                              <option value="LTU">Lithuania</option>
+                                              <option value="LUX">Luxembourg</option>
+                                              <option value="MAC">Macao</option>
+                                              <option value="MKD">Macedonia</option>
+                                              <option value="MDG">Madagascar</option>
+                                              <option value="MWI">Malawi</option>
+                                              <option value="MYS">Malaysia</option>
+                                              <option value="MDV">Maldives</option>
+                                              <option value="MLI">Mali</option>
+                                              <option value="MLT">Malta</option>
+                                              <option value="MHL">Marshall Islands</option>
+                                              <option value="MRT">Mauritania</option>
+                                              <option value="MUS">Mauritius</option>
+                                              <option value="MEX">Mexico</option>
+                                              <option value="FSM">Micronesia</option>
+                                              <option value="MDA">Moldova</option>
+                                              <option value="MCO">Monaco</option>
+                                              <option value="MNG">Mongolia</option>
+                                              <option value="MNE">Montenegro</option>
+                                              <option value="MAR">Morocco</option>
+                                              <option value="MOZ">Mozambique</option>
+                                              <option value="MMR">Myanmar</option>
+                                              <option value="NAM">Namibia</option>
+                                              <option value="NRU">Nauru</option>
+                                              <option value="NPL">Nepal</option>
+                                              <option value="NLD">Netherlands</option>
+                                              <option value="NZL">New Zealand</option>
+                                              <option value="NIC">Nicaragua</option>
+                                              <option value="NER">Niger</option>
+                                              <option value="NGA">Nigeria</option>
+                                              <option value="NIU">Niue</option>
+                                              <option value="NOR">Norway</option>
+                                              <option value="OMN">Oman</option>
+                                              <option value="PAK">Pakistan</option>
+                                              <option value="PSE">Palestine</option>
+                                              <option value="PAN">Panama</option>
+                                              <option value="PNG">Papua New Guinea</option>
+                                              <option value="PRY">Paraguay</option>
+                                              <option value="PER">Peru</option>
+                                              <option value="PHL">Philippines</option>
+                                              <option value="POL">Poland</option>
+                                              <option value="PRT">Portugal</option>
+                                              <option value="QAT">Qatar</option>
+                                              <option value="ROU">Romania</option>
+                                              <option value="RUS">Russia</option>
+                                              <option value="RWA">Rwanda</option>
+                                              <option value="KNA">Saint Kitts and Nevis</option>
+                                              <option value="LCA">Saint Lucia</option>
+                                              <option value="VCT">Saint Vincent and the Grenadines</option>
+                                              <option value="WSM">Samoa</option>
+                                              <option value="SMR">San Marino</option>
+                                              <option value="STP">Sao Tome and Principe</option>
+                                              <option value="SAU">Saudi Arabia</option>
+                                              <option value="SEN">Senegal</option>
+                                              <option value="SRB">Serbia</option>
+                                              <option value="SYC">Seychelles</option>
+                                              <option value="SLE">Sierra Leone</option>
+                                              <option value="SGP">Singapore</option>
+                                              <option value="SVK">Slovakia</option>
+                                              <option value="SVN">Slovenia</option>
+                                              <option value="SLB">Solomon Islands</option>
+                                              <option value="SOM">Somalia</option>
+                                              <option value="ZAF">South Africa</option>
+                                              <option value="KOR">South Korea</option>
+                                              <option value="SSD">South Sudan</option>
+                                              <option value="ESP">Spain</option>
+                                              <option value="LKA">Sri Lanka</option>
+                                              <option value="SDN">Sudan</option>
+                                              <option value="SUR">Suriname</option>
+                                              <option value="SWZ">Swaziland</option>
+                                              <option value="SWE">Sweden</option>
+                                              <option value="CHE">Switzerland</option>
+                                              <option value="SYR">Syria</option>
+                                              <option value="TJK">Tajikistan</option>
+                                              <option value="TZA">Tanzania</option>
+                                              <option value="THA">Thailand</option>
+                                              <option value="TLS">Timor-Leste</option>
+                                              <option value="TGO">Togo</option>
+                                              <option value="TON">Tonga</option>
+                                              <option value="TTO">Trinidad and Tobago</option>
+                                              <option value="TUN">Tunisia</option>
+                                              <option value="TUR">Turkey</option>
+                                              <option value="TKM">Turkmenistan</option>
+                                              <option value="TUV">Tuvalu</option>
+                                              <option value="UGA">Uganda</option>
+                                              <option value="UKR">Ukraine</option>
+                                              <option value="ARE">United Arab Emirates</option>
+                                              <option value="GBR">United Kingdom</option>
+                                              <option value="URY">Uruguay</option>
+                                              <option value="UZB">Uzbekistan</option>
+                                              <option value="VUT">Vanuatu</option>
+                                              <option value="VEN">Venezuela</option>
+                                              <option value="VNM">Vietnam</option>
+                                              <option value="YEM">Yemen</option>
+                                              <option value="ZMB">Zambia</option>
+                                              <option value="ZWE">Zimbabwe</option>
+                    </select>
+                  </div>
+                  <div class="form-group">          
+                    <select id="medium" class="form-control">
+                      <option value="select">Paper/Electronic</option>
+                      <option value="Paper">Paper</option>
+                      <option value="PDF">Electronic</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <select id="numOfCopies" class="form-control">
+                      <option value="select">Number of Copies</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          
+
+            
+            <div id="addDoc" class="form-group text-center" style="display: none" onclick="calculator()">
+            <button class="btn btn-primary text-center">Add Document</button>
+          </div>
+          <div id="addDocFinal" class="form-group text-center" style="display: none" onclick="calculator()">
+            <button class="btn btn-primary text-center">Add Document</button>
+          </div>
+          <div id="save" class="form-group text-center" style="display: none">
+            <button class="btn btn-primary text-center">Save Changes</button>
+          </div>
+          
+
+            <hr>
+      <div class="form-group">
+        <table class="table table-striped" id="cart" style="display: none">
+          <thead>
+          <tr>
+            <th>Order Line</th>
+            <th>Doc #</th>
+            <th>Doc Type</th>
+            <th>Cert</th> 
+            <th>Legal</th>
+            <th>Doc Medium</th>
+            <th># of Copies</th>
+            <th>Cost</th>
+            <th></th>
+          </tr>
+        </thead>
+        </tbody>
+          <tr id="first" class ="text-center" style="display: none">
+            <td id="one1" class="text-center"></td>
+            <td id="one2" class="text-center"></td>
+            <td id="one3" class="text-center"></td> 
+            <td id="one4" class="text-center"></td>
+            <td id="one5" class="text-center"></td>
+            <td id="one6" class="text-center"></td>
+            <td id="one7" class="text-center"></td>
+            <td id="one8" class="text-center"></td>
+            <td id="one9" class="text-center"><button class="btn btn-primary" id="edit1" style="display: none">Edit</button></td>
+          </tr>
+          <tr id="second" class="text-center" style="display: none">
+            <td id="two1" class="text-center"></td>
+            <td id="two2" class="text-center"></td>
+            <td id="two3" class="text-center"></td> 
+            <td id="two4" class="text-center"></td>
+            <td id="two5" class="text-center"></td>
+            <td id="two6" class="text-center"></td>
+            <td id="two7" class="text-center"></td>
+            <td id="two8" class="text-center"></td>
+            <td id="two9" class="text-center"><button class="btn btn-primary" id="edit2" style="display: none">Edit</button></td>
+          </tr>
+          <tr id="third" class="text-center" style="display: none">
+            <td id="three1" class="text-center"></td>
+            <td id="three2" class="text-center"></td>
+            <td id="three3" class="text-center"></td> 
+            <td id="three4" class="text-center"></td>
+            <td id="three5" class="text-center"></td>
+            <td id="three6" class="text-center"></td>
+            <td id="three7" class="text-center"></td>
+            <td id="three8" class="text-center"></td>
+            <td id="three9" class="text-center"><button class="btn btn-primary" id="edit3" style="display: none">Edit</button></td>
+          </tr>
+          <tr id="fourth" class="text-center" style="display: none">
+            <td id="four1" class="text-center"></td>
+            <td id="four2" class="text-center"></td>
+            <td id="four3" class="text-center"></td> 
+            <td id="four4" class="text-center"></td>
+            <td id="four5" class="text-center"></td>
+            <td id="four6" class="text-center"></td>
+            <td id="four7" class="text-center"></td>
+            <td id="four8" class="text-center"></td>
+            <td id="four9" class="text-center"><button class="btn btn-primary" id="edit4" style="display: none">Edit</button></td>
+          </tr>
+          <tr id="fifth" class="text-center" style="display: none">
+            <td id="five1" class="text-center"></td>
+            <td id="five2" class="text-center"></td>
+            <td id="five3" class="text-center"></td> 
+            <td id="five4" class="text-center"></td>
+            <td id="five5" class="text-center"></td>
+            <td id="five6" class="text-center"></td>
+            <td id="five7" class="text-center"></td>
+            <td id="five8" class="text-center"></td>
+            <td id="five9" class="text-center"><button class="btn btn-primary" id="edit5" style="display: none">Edit</button></td>
+          </tr>
+          <tr id="sixth" class="text-center" style="display: none">
+            <td id="six1" class="text-center"></td>
+            <td id="six2" class="text-center"></td>
+            <td id="six3" class="text-center"></td> 
+            <td id="six4" class="text-center"></td>
+            <td id="six5" class="text-center"></td>
+            <td id="six6" class="text-center"></td>
+            <td id="six7" class="text-center"></td>
+            <td id="six8" class="text-center"></td>
+            <td id="six9" class="text-center"><button class="btn btn-primary" id="edit6" style="display: none">Edit</button></td>
+          </tr>
+          <tr id="seventh" class="text-center" style="display: none">
+            <td id="seven1" class="text-center"></td>
+            <td id="seven2" class="text-center"></td>
+            <td id="seven3" class="text-center"></td> 
+            <td id="seven4" class="text-center"></td>
+            <td id="seven5" class="text-center"></td>
+            <td id="seven6" class="text-center"></td>
+            <td id="seven7" class="text-center"></td>
+            <td id="seven8" class="text-center"></td>
+            <td id="seven9" class="text-center"><button class="btn btn-primary" id="edit7" style="display: none">Edit</button></td>
+          </tr>
+          <tr id="eighth" class="text-center" style="display: none">
+            <td id="eight1" class="text-center"></td>
+            <td id="eight2" class="text-center"></td>
+            <td id="eight3" class="text-center"></td> 
+            <td id="eight4" class="text-center"></td>
+            <td id="eight5" class="text-center"></td>
+            <td id="eight6" class="text-center"></td>
+            <td id="eight7" class="text-center"></td>
+            <td id="eight8" class="text-center"></td>
+            <td id="eight9" class="text-center"><button class="btn btn-primary" id="edit8" style="display: none">Edit</button></td>
+          </tr>
+          <tr id="nineth" class="text-center" style="display: none">
+            <td id="nine1" class="text-center"></td>
+            <td id="nine2" class="text-center"></td>
+            <td id="nine3" class="text-center"></td> 
+            <td id="nine4" class="text-center"></td>
+            <td id="nine5" class="text-center"></td>
+            <td id="nine6" class="text-center"></td>
+            <td id="nine7" class="text-center"></td>
+            <td id="nine8" class="text-center"></td>
+            <td id="nine9" class="text-center"><button class="btn btn-primary" id="edit9" style="display: none">Edit</button></td>
+          </tr>
+          <tr id="tenth" class="text-center" style="display: none">
+            <td id="ten1" class="text-center"></td>
+            <td id="ten2" class="text-center"></td>
+            <td id="ten3" class="text-center"></td> 
+            <td id="ten4" class="text-center"></td>
+            <td id="ten5" class="text-center"></td>
+            <td id="ten6" class="text-center"></td>
+            <td id="ten7" class="text-center"></td>
+            <td id="ten8" class="text-center"></td>
+            <td id="ten9" class="text-center"><button class="btn btn-primary" id="edit10" style="display: none">Edit</button></td>
+          </tr>
+          <tr id="total" class="text-center" style="display: none">
+            <td id="tot1" class="text-center"></td>
+            <td id="tot2" class="text-center"></td>
+            <td id="tot3" class="text-center"></td> 
+            <td id="tot4" class="text-center"></td>
+            <td id="tot5" class="text-center"></td>
+            <td id="tot6" class="text-center"></td>
+            <td id="tot7" class="text-center"></td>
+            <td id="tot8" class="text-center"></td>
+            <td id="tot9" class="text-center"></td>
+          </tr>
+          <!--<tr style="display: hidden">
+            <td id="discount" class="text-center"></td>
+            <td id="amount" class="text-center"></td>
+          </tr>
+          <tr style="display: hidden">
+            <td id="totTime" class="text-center"></td>
+            <td id="totCost" class="text-center"></td>
+          </tr>-->
+        </tbody>
+        </table>
+
+        <div class="panel-body">
+        <div id="instructions" class="form-group" style="display: none">
+              <label for="exampleInputEmail1">Special Insturctions or Comments</label>
+              <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Insturctions/Comments"></textarea>
+            </div>
+          </div>
+      
+     
+            
+
+        
+        
+          </div>
+             <div class="form-group text-center" id="submitOrder" style="display: none">
+              <button  type="button" class="btn btn-primary">Submit Order</button>
+            </div>
+
+          </form>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <button class="btn btn-primary" id="edit4" style="display; block">Edit</button>
+
+
+<div>
+<button class="btn btn-primary" id="testBtn" style="display; block">Test</button> 
+<p id="test3">
+</p>
+</div>
+
+
+<div class="container col-lg-5 col-md-5 col-sm-8 col-xs-12">
+	<div class="panel panel-default">
+        <div style="background-color: #245580 !important" class="panel-heading">
+            <h4 style=" color: white !important" class="panel-title text-center">Application Pricing & Time</h4>
+        </div>
+        <table class="table table-striped">
+          <tr>
+            <td> Non-Certified</td>
+            <td> $1.00/page</td>
+            <td class="text-right"> 1 Day</td>
+          </tr>
+          <tr>
+            <td> Certified</td>
+            <td> $75.00</td>
+            <td class="text-right"> 7 Days</td>
+          </tr>
+          <tr>
+            <td> Additional Certified</td>
+            <td> $65.00 per</td>
+            <td class="text-right"> 7 Days</td>
+          </tr>
+        </table>
+    </div>
+    <div class="panel panel-default">
+        <div style="background-color: #245580 !important" class="panel-heading">
+            <h4 style=" color: white !important" class="panel-title text-center">File History Pricing & Time</h4>
+        </div>
+        <table class="table table-striped">
+          <tr>
+            <td> Non-Certified</td>
+            <td> $1.00/page</td>
+            <td class="text-right"> 1 Day</td>
+          </tr>
+          <tr>
+            <td> Certified</td>
+            <td> $120.00</td>
+            <td class="text-right"> 25 Days</td>
+          </tr>
+          <tr>
+            <td> Additional Certified</td>
+            <td> $100.00 per</td>
+            <td class="text-right"> 25 Days</td>
+          </tr>
+        </table>
+    </div>
+  <div class="panel panel-default">
+        <div style="background-color: #245580 !important" class="panel-heading">
+            <h4 style=" color: white !important" class="panel-title text-center">Assignment Pricing & Time</h4>
+        </div>
+        <table class="table table-striped">
+          <tr>
+            <td> Non-Certified</td>
+            <td> $60</td>
+            <td class="text-right"> 1 Day</td>
+          </tr>
+          <tr>
+            <td> Certified</td>
+            <td> $75.00</td>
+            <td class="text-right"> 7 Days</td>
+          </tr>
+          <tr>
+            <td> Additional Non-Certified</td>
+            <td> $5.00 per + $1.00/page</td>
+            <td class="text-right"> 1 Day</td>
+          </tr>
+          <tr>
+            <td> Additional Certified</td>
+            <td> $65.00 per</td>
+            <td class="text-right"> 7 Days</td>
+          </tr>
+        </table>
+    </div>
+  <div class="panel panel-default">
+        <div style="background-color: #245580 !important" class="panel-heading">
+            <h4 style=" color: white !important" class="panel-title text-center">Patent Pricing & Time</h4>
+        </div>
+        <table class="table table-striped">
+          <tr>
+            <td> Non-Certified Patent</td>
+            <td> $2.00</td>
+            <td class="text-right"> 1 Day</td>
+          </tr>
+          <tr>
+            <td> Certified Patent</td>
+            <td> $75.00</td>
+            <td class="text-right"> 7 Days</td>
+          </tr>
+          <tr>
+            <td> Additional Certified Patent</td>
+            <td> $65.00/patent</td>
+            <td class="text-right"> 7 Days</td>
+          </tr>
+        </table>
+</div>
+<p><strong>Important: </strong>Prices do <strong>NOT</strong> include return shipping, and time is in business days starting on the day the order is placed.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+
+{% endblock %}	
