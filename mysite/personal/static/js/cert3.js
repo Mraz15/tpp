@@ -615,6 +615,12 @@ $('#anotherDoc').click(function(){
 
 });
 
+$('#submit').click(function(){
+	$('#test3').text("submitted");
+	$.get('http://127.0.0.1:8000/email','it worked!');
+
+});
+
 
 
 
