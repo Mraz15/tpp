@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 import smtplib
 
 from django.shortcuts import render
+from django.http import HttpResponse, HttpResponseRedirect
 import smtplib
 import json
 from django.conf import settings
@@ -44,9 +45,13 @@ def email(request):
         text
         ])
 
-    server = smtplib.SMTP(settings.SMTP_HOST_AND_PORT)
-    server.starttls()
-    server.login(settings.SMTP_USERNAME,settings.SMTP_PASSWORD)
-    server.sendmail(settings.FROM_EMAIL, settings.TO_EMAIL, BODY)
-    server.quit()
-    return render(request, 'personal/home.html')
+
+    try:
+        server = smtplib.SMTP(settings.SMTP_HOST_AND_PORT)
+        server.starttls()
+        server.login(settings.SMTP_USERNAME,settings.SMTP_PASSWORD)
+        server.sendmail(settings.FROM_EMAIL, settings.TO_EMAIL, BODY)
+        server.quit()
+    except:
+        return HttpResponse('Failed')
+    return HttpResponse('Success')
