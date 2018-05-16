@@ -21,7 +21,7 @@ var tot = {
 		certFH: 55,
 		ass: 60,
 		pat: 5,
-		legal: 60,
+		legal: 75,
 		app: "Need Page Count",
 		FH: "Need Page Count"
 	},
@@ -212,7 +212,7 @@ var tot = {
 		"TUV": "call",
 		"UGA": "call",
 		"UKR": 0,
-		"ARE": 605,
+		"ARE": 550,
 		"GBR": 0,
 		"URY": 0,
 		"UZB": 0,
