@@ -1,5 +1,25 @@
+$(document).ready(function(){
+"use strict";
+$('#docType').change(function(){
+	var docType = $('#docType').val();
 
+	if (docType == 'certPTO'){
+        $('#states').prop('selectedIndex',1);
+        $("#states").prop("disabled", true);
+    } else {
+        $('#states').prop('selectedIndex',0);
+        $("#states").prop("disabled", false);
+    }
 
+    if (docType == 'trueCopy'){
+        $('#provider').prop('selectedIndex',1);
+        $("#provider").prop("disabled", true);
+    } else {
+        $('#provider').prop('selectedIndex',0);
+        $("#provider").prop("disabled", false);
+    }
+});
+});
 
 // list of variables 
 
@@ -189,7 +209,7 @@ var countryFees = {
 	"TUV": "call",
 	"UGA": "call",
 	"UKR": 0,
-	"ARE": 605,
+	"ARE": 550,
 	"GBR": 0,
 	"URY": 0,
 	"UZB": 0,
@@ -204,6 +224,7 @@ var countryFees = {
 //state fees for one document    
     stateFees = {
         "AL": 10,
+        "NA": 0,
         "AK": 5,
         "AZ": 3,
         "AR": 10,
@@ -260,6 +281,7 @@ var countryFees = {
 //state rush fees
     stateRushFees = {
         "AL": 0,
+        "NA": 0,
         "AK": 0,
         "AZ": 0,
         "AR": 0,
@@ -315,16 +337,17 @@ var countryFees = {
 
 //number of documents    
     ourFees = {
-        1: 60.00,
-        2: 120.00,
-        3: 170.00,
-        4: 220.00,
-        5: 270.00
+        1: 75.00,
+        2: 150.00,
+        3: 225.00,
+        4: 300.00,
+        5: 375.00
     },
 
 //state couier fees
     stateCourier = {
         "AL": 0,
+        "NA": 0,
         "AK": 0,
         "AZ": 0,
         "AR": 0,
@@ -380,6 +403,7 @@ var countryFees = {
 //shipping fees    
     ship = {
         "AL": 70,
+        "NA": 0,
         "AK": 60,
         "AZ": 60,
         "AR": 50,
@@ -442,7 +466,7 @@ var countryFees = {
     docTypeCost = {
         "trueCopy": 0,
         "cert": 50,
-        "certPTO": 41
+        "certPTO": 40
     },
     
     ourCertFees = {
@@ -639,7 +663,7 @@ function sscc() {
 }
 
 // Form Auto Populators
-function ProviderDropDown() {
+/*function ProviderDropDown() {
     "use strict";
     switch (document.getElementById('docType').value) {
     case "trueCopy":
@@ -654,9 +678,9 @@ function ProviderDropDown() {
     default:
         document.getElementById('provider').options[0] = new Option('Select provider', 'select');
     }
-}
+}*/
 
-function StateDropDown() {
+/*function StateDropDown() {
     "use strict";
     if (document.getElementById('states').options[1].value === 'N/A') {
         document.getElementById('states').options[1] = new Option('Alabama', 'AL');
@@ -668,14 +692,17 @@ function StateDropDown() {
             document.getElementById('states').options[i].style.display = 'none';
             document.getElementById('states').options[1] = new Option('N/A', 'N/A');
         break;
-    /*case 'cert':
+    case 'cert':
     case 'trueCopy':
             document.getElementById('states').options[i].style.display = 'block';
-        break;*/
+        break;
     default:
     }
     }
-}
+}*/
+
+//PUT AUTOFILLER HERE FOR STATE N/A FOR CERTIFIED PTO DOCS ETC...
+
 
 // Document Esimator3.0
 function Estimator() {
@@ -915,6 +942,7 @@ var country_times = {
 // long states take to process
     state_times = {
         "AL": 10,
+        "NA": 0,
         "AK": 5,
         "AZ": 5,
         "AR": 5,
@@ -1023,4 +1051,3 @@ function timeEstimate() {
         document.getElementById('estimate2').innerHTML = "Complete form";
     }
 }
-

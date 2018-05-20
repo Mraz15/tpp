@@ -21,7 +21,7 @@ var tot = {
 		certFH: 55,
 		ass: 60,
 		pat: 5,
-		legal: 60,
+		legal: 75,
 		app: "Need Page Count",
 		FH: "Need Page Count"
 	},
@@ -212,7 +212,7 @@ var tot = {
 		"TUV": "call",
 		"UGA": "call",
 		"UKR": 0,
-		"ARE": 605,
+		"ARE": 550,
 		"GBR": 0,
 		"URY": 0,
 		"UZB": 0,
@@ -274,8 +274,6 @@ function calculator(docType, cert, numOfCopies){
 	}
 }
 
-	
-
 }
 
 function docNumTypes(docType){
@@ -293,6 +291,48 @@ function docNumTypes(docType){
 			$('#patNum').css('display', 'none');
 			break;
 		case "FH":
+			$('#FHNum').css('display', 'block');
+			$('#appNum').css('display', 'none');
+			$('#assNum').css('display', 'none');
+			$('#patNum').css('display', 'none');
+			break;
+		case "FH + all refs":
+			$('#FHNum').css('display', 'block');
+			$('#appNum').css('display', 'none');
+			$('#assNum').css('display', 'none');
+			$('#patNum').css('display', 'none');
+			break;
+		case "FH/NPLs/US":
+			$('#FHNum').css('display', 'block');
+			$('#appNum').css('display', 'none');
+			$('#assNum').css('display', 'none');
+			$('#patNum').css('display', 'none');
+			break;
+		case "FH/NPLs/For":
+			$('#FHNum').css('display', 'block');
+			$('#appNum').css('display', 'none');
+			$('#assNum').css('display', 'none');
+			$('#patNum').css('display', 'none');
+			break;
+		case "FH/US/For":
+			$('#FHNum').css('display', 'block');
+			$('#appNum').css('display', 'none');
+			$('#assNum').css('display', 'none');
+			$('#patNum').css('display', 'none');
+			break;
+		case "FH/NPLs":
+			$('#FHNum').css('display', 'block');
+			$('#appNum').css('display', 'none');
+			$('#assNum').css('display', 'none');
+			$('#patNum').css('display', 'none');
+			break;
+		case "FH/US":
+			$('#FHNum').css('display', 'block');
+			$('#appNum').css('display', 'none');
+			$('#assNum').css('display', 'none');
+			$('#patNum').css('display', 'none');
+			break;
+		case "FH/For":
 			$('#FHNum').css('display', 'block');
 			$('#appNum').css('display', 'none');
 			$('#assNum').css('display', 'none');
@@ -489,8 +529,8 @@ $('#addDoc').click(function(){
 
 
 	}
-
-	$('input[type="checkbox"]').click(function() {
+	});
+	$('#cart').on('click','input[type="checkbox"]', function() {
     if (this.checked) {
     	var selectedLine = $(this).attr('name');
     	$('#delete').css('display','block');
@@ -502,7 +542,7 @@ $('#addDoc').click(function(){
     } else {
     	$('#delete').css('display','none');
     }
-    });
+	
     });
 
 
@@ -516,24 +556,20 @@ $('#addDoc').click(function(){
     		countries = $(this).parent().siblings("[name='countries']").text(),
     		cartLine = $(this).attr('name');
 
-    	if (($('#NPLs').prop('checked')) || ($('#USRef').prop('checked')) || ($('#forRef').prop('checked'))) {
-    		docType = 'FH';
-    	}
-
+	
+	
 	
 	$("#docType").val(docType);
-	//$("#docNum").val(docNum);
+	if (docType == "FH + all refs" || docType == "FH/NPLs/US" || docType == "FH/NPLs/For" || docType == "FH/US/For" || docType == "FH/NPLs" || docType == "FH/US" || docType == "FH/For"){
+		$("#docType").val('FH');
+	}
 	$("#medium").val(medium);
 	$("#numOfCopies").val(numOfCopies);
 	$("#countries").val(countries);
 	$('#'+ cartLine).remove();
 
-	$('#test3').text(docType);
-	
-	
 	docNumTypes(docType);
 	
-
 	switch (docType) {
 		case "app":
 			$('#appNum').val(docNum);
@@ -544,24 +580,72 @@ $('#addDoc').click(function(){
 		case "FH":
 			$('#FHNum').val(docNum);
 			break;
+		case "FH + all refs":
+			$('#FHNum').val(docNum);
+			break;
+		case "FH/NPLs/US":
+			$('#FHNum').val(docNum);
+			break;
+		case "FH/NPLs/For":
+			$('#FHNum').val(docNum);
+			break;
+		case "FH/US/For":
+			$('#FHNum').val(docNum);
+			break;
+		case "FH/NPLs":
+			$('#FHNum').val(docNum);
+			break;
+		case "FH/US":
+			$('#FHNum').val(docNum);
+			break;
+		case "FH/For":
+			$('#FHNum').val(docNum);
+			break;
 		case "pat":
 			$('#patNum').val(docNum);
 			break;
 	}
 
-	if (($('#NPLs').prop('checked')) || ($('#USRef').prop('checked')) || ($('#forRef').prop('checked'))){
-		$('#FHNum').css('display', 'block');
-		$('#appNum').css('display', 'none');
-		$('#assNum').css('display', 'none');
-		$('#patNum').css('display', 'none');
-		$('#docType').val('FH');
-		$('#FHNum').val(docNum);
-	}
-
-	if ((docType == 'FH' && cert == 'No')){
+	if (docType == "FH + all refs"){
+		$('#NPLs').prop('checked', true);
+		$('#USRef').prop('checked', true);
+		$('#forRef').prop('checked', true);
 		$('#FHNPLs').css('display','block');
-	} else {
-		$('#FHNPLs').css('display','none');
+	} else if (docType == "FH/NPLs/US"){
+		$('#NPLs').prop('checked', true);
+		$('#USRef').prop('checked', true);
+		$('#forRef').prop('checked', false);
+		$('#FHNPLs').css('display','block');
+	} else if (docType == "FH/NPLs/For"){
+		$('#NPLs').prop('checked', true);
+		$('#USRef').prop('checked', false);
+		$('#forRef').prop('checked', true);
+		$('#FHNPLs').css('display','block');
+	} else if (docType == "FH/US/For"){
+		$('#NPLs').prop('checked', false);
+		$('#USRef').prop('checked', true);
+		$('#forRef').prop('checked', true);
+		$('#FHNPLs').css('display','block');
+	} else if (docType == "FH/NPLs"){
+		$('#NPLs').prop('checked', true);
+		$('#USRef').prop('checked', false);
+		$('#forRef').prop('checked', false);
+		$('#FHNPLs').css('display','block');
+	} else if (docType == "FH/US"){
+		$('#NPLs').prop('checked', false);
+		$('#USRef').prop('checked', true);
+		$('#forRef').prop('checked', false);
+		$('#FHNPLs').css('display','block');
+	} else if (docType == "FH/For"){
+		$('#NPLs').prop('checked', false);
+		$('#USRef').prop('checked', false);
+		$('#forRef').prop('checked', true);
+		$('#FHNPLs').css('display','block');
+	} else if (docType == "FH"){
+		$('#NPLs').prop('checked', false);
+		$('#USRef').prop('checked', false);
+		$('#forRef').prop('checked', false);
+		$('#FHNPLs').css('display','block');
 	}
 
 	certOptions(cert);
@@ -589,21 +673,33 @@ $('#addDoc').click(function(){
 
 			docNumEnter(docType);
 
+			if (($('#NPLs').prop('checked')) && ($('#USRef').prop('checked')) && ($('#forRef').prop('checked'))){
+				docType = "FH + all refs";
+			} else if (($('#NPLs').prop('checked')) && ($('#USRef').prop('checked'))){
+				docType = "FH/NPLs/US";
+			} else if (($('#NPLs').prop('checked')) && ($('#forRef').prop('checked'))){
+				docType = "FH/NPLs/For";
+			} else if (($('#forRef').prop('checked')) && ($('#USRef').prop('checked'))){
+				docType = "FH/US/For";
+			} else if ($('#NPLs').prop('checked')){
+				docType = "FH/NPLs";
+			} else if ($('#USRef').prop('checked')){
+				docType = "FH/US";
+			} else if ($('#forRef').prop('checked')){
+				docType = "FH/For";
+			}
+
 			var data = "<tr id="+cartLine+"><td><input name="+cartLine+" type='checkbox' id='checkbox'></td><td name='docNum'>"+docNum+"</td><td name='docType'>"+docType+"</td><td name='cert'>"+cert+"</td><td name='countries'>"+country+"</td><td name='medium'>"+medium+"</td><td name='numOfCopies'>"+numOfCopies+"</td><td id='cost'>"+cost+"</td><td><button class='btn btn-primary edit' name="+cartLine+">Edit</button></td></tr>";
 
 		$('#cart').append(data);
 		$('#cart').css('display','table');
 		formReset();
-	
 
 		$('#submitOrder').css('display','block');
 		$('#anotherDoc').css('display','block');
 		$('#documentLine').css('display', 'none'); 
-
     
 		});
-
-
 
 $('#anotherDoc').click(function(){
 	$('#documentLine').css('display', 'block');
@@ -615,13 +711,38 @@ $('#anotherDoc').click(function(){
 
 });
 
+function getCookie(name) {
+    var cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = jQuery.trim(cookies[i]);
+            // Does this cookie string begin with the name we want?
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+var csrftoken = getCookie('csrftoken');
+$.ajaxSetup({
+        beforeSend: function(xhr, settings) {
+            xhr.setRequestHeader("X-CSRFToken", csrftoken);
+        }
+    });
+
+
 $('#submit').click(function(){
-	$('#test3').text("submitted");
-	$.get('http://127.0.0.1:8000/email','it worked!');
-
+	// var json_data = { "docNum": docNum, "docType" : doc.docType,"cert" : cert.val, "legal" : legal.val, "docMed" : medium, "copies": numOfCopies, "cost" : cost.innerText  }
+	var json_data = { "docNum": docNum, "docType" : doc.docType,"cert" : cert.val, "legal" : legal.val, "cost" : cost.innerText  }
+	$.post( "/email",  JSON.stringify(json_data), 
+	function(){
+		alert("Successfully Submitted!");
+		window.location.replace("/");
+    });
 });
-
-
 
 
 });
