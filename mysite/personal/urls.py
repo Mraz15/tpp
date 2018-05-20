@@ -9,4 +9,5 @@ urlpatterns = [
     url(r'^contact$', views.contact, name='contact'),
     url(r'^about$', views.about, name='about'),
     url(r'^email$', views.email, name='email'),
+    url(r'^thanks$', views.thanks, name='thanks'),
     ]

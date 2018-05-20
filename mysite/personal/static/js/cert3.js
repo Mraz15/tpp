@@ -735,12 +735,15 @@ $.ajaxSetup({
 
 
 $('#submit').click(function(){
-	// var json_data = { "docNum": docNum, "docType" : doc.docType,"cert" : cert.val, "legal" : legal.val, "docMed" : medium, "copies": numOfCopies, "cost" : cost.innerText  }
 	var json_data = { "docNum": docNum, "docType" : doc.docType,"cert" : cert.val, "legal" : legal.val, "cost" : cost.innerText  }
 	$.post( "/email",  JSON.stringify(json_data), 
-	function(){
-		alert("Successfully Submitted!");
-		window.location.replace("/");
+	function(xml, textStatus, xhr){
+		if(xhr.status === 200){
+			alert("Successfully Submitted!");
+			window.location.replace("/thanks?order=" + JSON.stringify(json_data));
+		} else{
+			alert("Submission Failed, Please Submit again!");
+		}
     });
 });
 

@@ -1,0 +1,19 @@
+{% extends "personal/header.html" %}
+
+{% block content %}
+<body>
+    <div class="container">
+        <div style="background-color: #245580 !important" class="jumbotron">
+            <h1 style=" color: white !important">Thank you for your order!</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <h3>Document 1: </h3>
+        {% for key, value in order.items %}
+            <li>{{ key }} : {{ value }} </li> 
+        {% endfor %}
+    </div>
+    </div>
+</body>
+{% endblock %}	

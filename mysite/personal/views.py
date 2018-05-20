@@ -53,5 +53,10 @@ def email(request):
         server.sendmail(settings.FROM_EMAIL, settings.TO_EMAIL, BODY)
         server.quit()
     except:
-        return HttpResponse('Failed')
-    return HttpResponse('Success')
+        return HttpResponse(status=400)
+    return HttpResponse(status=200)
+
+def thanks(request):
+    order = request.GET.get('order')
+    return render(request, 'personal/thank_you.html', {'order': json.loads(order)})
+    
